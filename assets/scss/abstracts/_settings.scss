@@ -1,6 +1,12 @@
 // Variables couleurs
-$text-primary : black;
-$text-secondary : white;
+$text-primary: black;
+$text-secondary: white;
 
-$primary-color : #ef533c;
-$secondary-color : #4b5c75;
+$primary-color: #ef533c;
+$secondary-color: #4b5c75;
+
+.filter-svg-burger {
+    filter: brightness(0%) saturate(0%) contrast(1000%);
+    -webkit-filter: brightness(0%) saturate(0%) contrast(1000%);
+    -moz-filter: brightness(0%) saturate(0%) contrast(1000%);
+}
