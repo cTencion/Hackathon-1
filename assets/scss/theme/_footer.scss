@@ -3,25 +3,34 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  user-select: none;
   font-family: "monserrat_regular";
-
+  background: black;
+  color: white;
   .social {
     ul {
-      padding-top: 5%;
+      padding-top: 2%;
       display: flex;
       justify-content: space-evenly;
     }
     li {
       list-style: none;
       font-size: 2.5rem;
+      cursor: pointer;
+      color: $primary-color;
     }
-    span {
-      padding-top: 20px;
+    li:hover {
+      transform: scale(1.5);
+      transition: 0.3s;
+    }
+    h6 {
+      padding-top: 5%;
     }
   }
   p {
     text-align: center;
-    padding-top: 20%;
+    padding-top: 10%;
+    padding-bottom: 5%;
     font-size: 0.6rem;
   }
 }

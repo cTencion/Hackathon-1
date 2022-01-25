@@ -19,23 +19,33 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  user-select: none;
   font-family: "monserrat_regular";
+  background: black;
+  color: white;
 }
 footer .social ul {
-  padding-top: 5%;
+  padding-top: 2%;
   display: flex;
   justify-content: space-evenly;
 }
 footer .social li {
   list-style: none;
   font-size: 2.5rem;
+  cursor: pointer;
+  color: #ef533c;
 }
-footer .social span {
-  padding-top: 20px;
+footer .social li:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+footer .social h6 {
+  padding-top: 5%;
 }
 footer p {
   text-align: center;
-  padding-top: 20%;
+  padding-top: 10%;
+  padding-bottom: 5%;
   font-size: 0.6rem;
 }
 
