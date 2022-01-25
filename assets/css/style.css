@@ -1,52 +1,18 @@
-@font-face {
-  font-family: "monserrat_regular";
-  src: url(../font/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: "monserrat_bold";
-  src: url(../font/Montserrat-bold.ttf);
-}
-@font-face {
-  font-family: "oswald_regular";
-  src: url(../font/Oswald-Regular.ttf);
-}
-@font-face {
-  font-family: "oswald_bold";
-  src: url(../font/Oswald-Bold.ttf);
-}
-footer {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  user-select: none;
-  font-family: "monserrat_regular";
-  background: black;
-  color: white;
-}
-footer .social ul {
-  padding-top: 2%;
-  display: flex;
-  justify-content: space-evenly;
-}
-footer .social li {
-  list-style: none;
-  font-size: 2.5rem;
-  cursor: pointer;
-  color: #ef533c;
-}
-footer .social li:hover {
-  transform: scale(1.5);
-  transition: 0.3s;
-}
-footer .social h6 {
-  padding-top: 5%;
-}
-footer p {
-  text-align: center;
-  padding-top: 10%;
-  padding-bottom: 5%;
-  font-size: 0.6rem;
-}
+/* Error: expected "{".
+ *    ,
+ * 10 |     :10px ;
+ *    |           ^
+ *    '
+ *   assets\scss\theme\_missions.scss 10:11  @import
+ *   assets\scss\style.scss 9:9              root stylesheet */
 
-/*# sourceMappingURL=style.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 10 \2502      :10px ;\d\a    \2502            ^\a    \2575 \a   assets\\scss\\theme\\_missions.scss 10:11  @import\a   assets\\scss\\style.scss 9:9              root stylesheet';
+}

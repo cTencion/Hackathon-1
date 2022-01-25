@@ -1,0 +1,17 @@
+.cards_mission_container {
+  display: flex;
+  padding: 10%;
+
+  font-family: "monserrat_bold";
+
+  article {
+    height: 300px;
+    width: 300px;
+    :10px ;
+    text-align: center;
+    justify-content: end;
+    h3 {
+      font-size: 0.9rem;
+    }
+  }
+}

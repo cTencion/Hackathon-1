@@ -1,0 +1,21 @@
+.temoignage {
+  text-align: center;
+
+  .container_cards {
+    padding: 10%;
+    gap: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .card_temoignage {
+      img {
+        width: 80%;
+        border-radius: 500px;
+        margin: 0 auto;
+      }
+      p {
+        padding: 10px 10px;
+        text-align: left;
+      }
+    }
+  }
+}
