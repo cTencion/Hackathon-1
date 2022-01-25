@@ -46,10 +46,11 @@ header {
   }
 
   #hidden {
+    background-color: $secondary-color;
+    height: 100%;
+    width: 40%;
     position: absolute;
     left: -300px;
-    height: 100%;
-    background-color: $secondary-color;
     top: 0;
     transition: 0.5s ease-out;
     z-index: 2000000000000;
@@ -60,13 +61,21 @@ header {
     ul {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      align-items: center;
       list-style-type: none;
+      margin: 2vh 0 0 0;
+      padding: 0;
 
       li {
+        margin: 5%;
         a {
           text-decoration: none;
           color: white;
+          transition: all 0.3s;
+
+          &:hover{
+            color : $primary-color
+          }
         }
       }
     }
