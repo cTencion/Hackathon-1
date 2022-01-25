@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["../scss/abstracts/_fonts.scss","../scss/theme/_header.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;;ACjBJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;;AAEF;EACE;;AAEF;EACE;;AAEF;EACE;;AAIF;EACE;;AAEF;EACE;;AAEF;EACE;;AAEF;EACE;;AAEF;EACE;;AAEF;EACE;;AAEF;EACE;;AAEF;EACE;EACA;;AAEF;EACE;;AAEF;EACE;EACA;;AAEF;EACE;;AAEF;EACE","file":"style.css"}
-=======
-{"version":3,"sourceRoot":"","sources":["../scss/abstracts/_fonts.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA","file":"style.css"}
->>>>>>> main
