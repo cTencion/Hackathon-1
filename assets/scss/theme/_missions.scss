@@ -1,12 +1,13 @@
 .cards_mission_container {
   display: flex;
-  padding: 10%;
-
+  justify-content: space-around;
+  padding: 2%;
   font-family: "monserrat_bold";
 
-  article {
-    height: 300px;
-    width: 300px;
+  .card {
+    height: 220px;
+    width: 220px;
+    margin: 0 15px;
     text-align: center;
     justify-content: end;
     h3 {

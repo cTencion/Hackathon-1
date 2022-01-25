@@ -1,18 +1,96 @@
-/* Error: expected "{".
- *    ,
- * 10 |     :10px ;
- *    |           ^
- *    '
- *   assets\scss\theme\_missions.scss 10:11  @import
- *   assets\scss\style.scss 9:9              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 10 \2502      :10px ;\d\a    \2502            ^\a    \2575 \a   assets\\scss\\theme\\_missions.scss 10:11  @import\a   assets\\scss\\style.scss 9:9              root stylesheet';
+@font-face {
+  font-family: "monserrat_regular";
+  src: url(../font/Montserrat-Regular.ttf);
 }
+@font-face {
+  font-family: "monserrat_bold";
+  src: url(../font/Montserrat-bold.ttf);
+}
+@font-face {
+  font-family: "oswald_regular";
+  src: url(../font/Oswald-Regular.ttf);
+}
+@font-face {
+  font-family: "oswald_bold";
+  src: url(../font/Oswald-Bold.ttf);
+}
+.cards_mission_container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+  font-family: "monserrat_bold";
+}
+.cards_mission_container .card {
+  height: 220px;
+  width: 220px;
+  margin: 0 15px;
+  text-align: center;
+  justify-content: end;
+}
+.cards_mission_container .card h3 {
+  font-size: 0.9rem;
+}
+
+.temoignage {
+  text-align: center;
+}
+.temoignage .container_cards {
+  padding: 10%;
+  gap: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.temoignage .container_cards .card_temoignage .img_container {
+  border-radius: 500px;
+  height: 160px;
+  width: 160px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.temoignage .container_cards .card_temoignage .img_container img {
+  width: 100%;
+  object-fit: cover;
+}
+.temoignage .container_cards .card_temoignage p {
+  padding: 10px 10px;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  user-select: none;
+  font-family: "monserrat_regular";
+  background: black;
+  color: white;
+}
+footer .social ul {
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .social li {
+  list-style: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+footer .social li a {
+  color: #ef533c;
+}
+footer .social li:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+footer .social h6 {
+  padding-top: 5%;
+}
+footer p {
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  font-size: 0.6rem;
+}
+
+/*# sourceMappingURL=style.css.map */
