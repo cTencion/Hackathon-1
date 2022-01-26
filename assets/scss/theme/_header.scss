@@ -2,12 +2,12 @@ header {
   font-family: "oswald_regular";
   font-size: 1.3rem;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   z-index : 3;
 
   .header-box {
     padding: 0;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     display: flex;
     justify-content: space-around;
