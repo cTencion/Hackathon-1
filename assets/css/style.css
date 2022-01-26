@@ -24,13 +24,33 @@
   -moz-filter: brightness(0%) saturate(0%) contrast(1000%);
 }
 
+body {
+  margin: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "oswald_bold";
+  font-size: 2.5rem;
+}
+
+.display-block {
+  display: block;
+}
+
 header {
   font-family: "oswald_regular";
+  font-size: 2rem;
+  position: absolute;
+  width: 100vw;
+  z-index: 3;
 }
 header .header-box {
+  padding: 0;
   align-items: center;
   display: flex;
   justify-content: space-around;
+  background: rgba(0, 0, 0, 0.5);
 }
 header .header-box .header-logo {
   width: 15%;
@@ -48,16 +68,20 @@ header .header-box .header-logo img {
 }
 header .header-box nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
+}
+header .header-box nav ul li {
+  width: 150px;
+  height: 50px;
 }
 header .header-box nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 header .header-box nav ul li a:hover {
-  font-family: "oswald_bold";
-  transition: all 0.3s;
+  font-size: 2.1rem;
+  transition: all 0.2s;
 }
 header #burger-btn {
   display: none;
@@ -152,6 +176,30 @@ header #hidden ul li a {
 }
 header #hidden ul li a:hover {
   color: #ef533c;
+}
+
+#home-banner {
+  position: relative;
+  background: no-repeat url(../img/banner_home.jpg) center/cover;
+  height: 100vh;
+  max-height: 880px;
+}
+#home-banner .bloc-banner {
+  color: white;
+  width: 50%;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#home-banner .bloc-banner p:nth-child(2) {
+  text-transform: uppercase;
+  font-family: "monserrat_regular";
+  font-size: 1.8rem;
+}
+#home-banner .bloc-banner p:nth-child(3) {
+  font-family: "monserrat_bold";
+  font-size: 1.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
