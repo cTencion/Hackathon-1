@@ -5,19 +5,27 @@ $text-secondary: white;
 $primary-color: #ef533c;
 $secondary-color: #4b5c75;
 
-// Mixin bouton
+// Couleur menu burger
+.filter-svg-burger {
+    filter: brightness(0%) saturate(0%) contrast(1000%);
+    -webkit-filter: brightness(0%) saturate(0%) contrast(1000%);
+    -moz-filter: brightness(0%) saturate(0%) contrast(1000%);
+}
 
+// Mixin bouton
 @mixin btnMix($color, $bg, $border, $hover) {
-    padding: 13px 45px;
-    border-radius: 10px;
-    border: 2px solid $border;
-    background: $bg;
-    color: $color;
-    font-family: "monserrat_bold";
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    &:hover {
-      background: $hover;
-    }
+  padding: 13px 45px;
+  border-radius: 10px;
+  border: 2px solid $border;
+  background: $bg;
+  color: $color;
+  font-family: "monserrat_bold";
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition :all 0.3s;
+  display: inline-block;
+  &:hover {
+    background: $hover;
   }
+}

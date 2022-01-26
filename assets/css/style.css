@@ -1,25 +1,18 @@
-@font-face {
-  font-family: "monserrat_regular";
-  src: url(../font/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: "monserrat_bold";
-  src: url(../font/Montserrat-bold.ttf);
-}
-@font-face {
-  font-family: "oswald_regular";
-  src: url(../font/Oswald-Regular.ttf);
-}
-@font-face {
-  font-family: "oswald_bold";
-  src: url(../font/Oswald-Bold.ttf);
-}
-h2 {
-  text-align: center;
-  font-family: "oswald_bold";
-  color: white;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
+/* Error: expected "{".
+ *    ,
+ * 16 | <<<<<<< HEAD
+ *    |             ^
+ *    '
+ *   assets\scss\theme\_base.scss 16:13  @import
+ *   assets\scss\style.scss 4:9          root stylesheet */
 
-/*# sourceMappingURL=style.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 16 \2502  <<<<<<< HEAD\d\a    \2502              ^\a    \2575 \a   assets\\scss\\theme\\_base.scss 16:13  @import\a   assets\\scss\\style.scss 4:9          root stylesheet';
+}

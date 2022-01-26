@@ -1,0 +1,36 @@
+#home-banner {
+    position: relative;
+    background: no-repeat url(../img/banner_home.jpg) center/cover;
+    height: 100vh;
+    max-height: 880px;
+
+    .bloc-banner {
+        color: white;
+        width: 50%;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+
+        h1 > .display-block{
+            margin-top: 10px;
+        }
+
+        p:nth-child(2){
+            text-transform: uppercase;
+            font-family: "monserrat_regular";
+            font-size: 1.4rem;
+        }
+
+        p:nth-child(3){
+            font-family: "monserrat_bold";
+            font-size: 1rem;
+        }
+
+        a {
+            position: absolute;
+            @include btnMix(white, none, $primary-color, $primary-color);
+            top : 110%;
+        }
+    }
+}
