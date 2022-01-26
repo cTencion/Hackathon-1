@@ -1,0 +1,73 @@
+footer {
+  height: 280px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  padding-bottom: 10px;
+  user-select: none;
+  font-family: "monserrat_regular";
+  background: $secondary-color;
+  color: white;
+  .retour {
+    padding-top: 10px;
+    background: $secondary-color;
+    border: none;
+    &:hover {
+      transform: scale(0.8);
+    }
+  }
+  .main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    h6 {
+      padding-top: 10px;
+      padding-bottom: 5px;
+      font-family: "oswald_bold";
+    }
+  }
+  .social {
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      padding-top: 3%;
+      display: flex;
+      justify-content: center;
+      padding-right: 10%;
+    }
+    li {
+      list-style: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0 5px;
+      a {
+        color: white;
+      }
+    }
+    li:hover {
+      transform: scale(1.2);
+      transition: 0.3s;
+    }
+    h6 {
+      padding-top: 10%;
+      margin: 0;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 0.6rem;
+    margin: 0;
+  }
+  .horaire {
+    .jour {
+      font-weight: bolder;
+    }
+  }
+  .mentionslegales {
+    margin-bottom: 20px 0;
+  }
+}

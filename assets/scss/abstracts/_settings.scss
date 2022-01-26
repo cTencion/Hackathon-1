@@ -7,9 +7,9 @@ $secondary-color: #4b5c75;
 
 // Couleur menu burger
 .filter-svg-burger {
-    filter: brightness(0%) saturate(0%) contrast(1000%);
-    -webkit-filter: brightness(0%) saturate(0%) contrast(1000%);
-    -moz-filter: brightness(0%) saturate(0%) contrast(1000%);
+  filter: brightness(0%) saturate(0%) contrast(1000%);
+  -webkit-filter: brightness(0%) saturate(0%) contrast(1000%);
+  -moz-filter: brightness(0%) saturate(0%) contrast(1000%);
 }
 
 // Mixin bouton
@@ -23,7 +23,7 @@ $secondary-color: #4b5c75;
   font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
-  transition :all 0.3s;
+  transition: all 0.3s;
   display: inline-block;
   &:hover {
     background: $hover;
