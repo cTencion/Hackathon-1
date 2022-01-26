@@ -7,6 +7,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     .card_temoignage {
+      border: 1px solid;
+      border-radius: 5px;
       .img_container {
         border-radius: 500px;
         height: 160px;
@@ -15,6 +17,7 @@
         margin: 0 auto;
         img {
           width: 100%;
+
           object-fit: cover;
         }
       }

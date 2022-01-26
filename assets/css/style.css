@@ -16,19 +16,40 @@
 }
 .cards_mission_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background: #ef533c;
   padding: 2%;
   font-family: "monserrat_bold";
 }
+@media (max-width: 970px) {
+  .cards_mission_container {
+    display: none;
+  }
+}
 .cards_mission_container .card {
   height: 220px;
-  width: 220px;
-  margin: 0 15px;
+  min-width: 220px;
+  margin: 0 10px;
   text-align: center;
+  text-transform: uppercase;
+  color: white;
   justify-content: end;
 }
 .cards_mission_container .card h3 {
   font-size: 0.9rem;
+}
+
+.cards_mission_container_carousel {
+  width: 50%;
+  margin: 0 auto;
+  display: none;
+}
+@media (max-width: 970px) {
+  .cards_mission_container_carousel {
+    display: block;
+  }
 }
 
 .temoignage {
@@ -39,6 +60,10 @@
   gap: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+.temoignage .container_cards .card_temoignage {
+  border: 1px solid;
+  border-radius: 5px;
 }
 .temoignage .container_cards .card_temoignage .img_container {
   border-radius: 500px;
