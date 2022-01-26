@@ -13,6 +13,7 @@
 @font-face {
   font-family: "oswald_bold";
   src: url(../font/Oswald-Bold.ttf);
+<<<<<<< HEAD
 }
 .filter-svg-burger {
   filter: brightness(0%) saturate(0%) contrast(1000%);
@@ -151,3 +152,6 @@ header #hidden ul li a:hover {
 }
 
 /*# sourceMappingURL=style.css.map */
+=======
+}
+>>>>>>> main
