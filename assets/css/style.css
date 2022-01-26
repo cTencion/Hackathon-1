@@ -192,18 +192,19 @@ header #hidden ul li a:hover {
 
 #Missions {
   background: #ef533c;
-  height: 450px;
+  height: 470px;
   position: relative;
 }
 #Missions h2 {
-  padding-top: 40px;
+  padding: 20px;
+  text-align: center;
 }
 #Missions .reserver {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 5%;
-  padding: 13px 45px;
+  bottom: 2%;
+  padding: 8px 45px;
   border-radius: 10px;
   border: 2px solid black;
   background: #ef533c;
@@ -212,20 +213,7 @@ header #hidden ul li a:hover {
   font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
-  transition: all 0.3s;
-  display: inline-block;
-  padding: 13px 45px;
-  border-radius: 10px;
-  border: 2px solid black;
-  background: #ef533c;
-  color: white;
-  font-family: "monserrat_bold";
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-#Missions .reserver:hover {
-  background: black;
+  margin-bottom: 40px;
 }
 #Missions .reserver:hover {
   background: black;
@@ -237,7 +225,7 @@ header #hidden ul li a:hover {
 #Missions .cards_mission_container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 350px;
   font-family: "monserrat_bold";
 }
@@ -252,6 +240,8 @@ header #hidden ul li a:hover {
   margin: 0 10px;
   text-align: center;
   text-transform: uppercase;
+  background: #ef533c;
+  border: none;
   color: white;
   justify-content: end;
 }
@@ -267,7 +257,9 @@ header #hidden ul li a:hover {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  padding-top: 20px;
+  bottom: -8px;
+  padding: 10px;
+  backdrop-filter: blur(3px);
 }
 #Missions .cards_mission_container_carousel {
   width: 70%;

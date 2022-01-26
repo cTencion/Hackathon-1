@@ -1,20 +1,19 @@
 #Missions {
   background: $primary-color;
-  height: 450px;
+  height: 470px;
   position: relative;
 
   h2 {
-    padding-top: 40px;
+    padding: 20px;
+    text-align: center;
   }
 
   .reserver {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 5%;
-    @include btnMix(white, $primary-color, black, black);
-
-    padding: 13px 45px;
+    bottom: 2%;
+    padding: 8px 45px;
     border-radius: 10px;
     border: 2px solid black;
     background: $primary-color;
@@ -23,6 +22,7 @@
     font-size: 1.1rem;
     text-transform: uppercase;
     text-decoration: none;
+    margin-bottom: 40px;
     &:hover {
       background: black;
     }
@@ -35,7 +35,7 @@
   .cards_mission_container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 350px;
     font-family: "monserrat_bold";
     @media (max-width: 970px) {
@@ -48,6 +48,8 @@
       margin: 0 10px;
       text-align: center;
       text-transform: uppercase;
+      background: $primary-color;
+      border: none;
       color: white;
       justify-content: end;
 
@@ -63,7 +65,9 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        padding-top: 20px;
+        bottom: -8px;
+        padding: 10px;
+        backdrop-filter: blur(3px);
       }
     }
   }
