@@ -35,7 +35,6 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   font-family: "oswald_bold";
   color: white;
   font-size: 1.5rem;
@@ -55,6 +54,7 @@ header {
 }
 header .header-box {
   padding: 0;
+  width: 100vw;
   align-items: center;
   display: flex;
   justify-content: space-around;
@@ -231,6 +231,40 @@ header #hidden ul li a:hover {
 }
 #home-banner .bloc-banner a:hover {
   background: #ef533c;
+}
+
+.concept-one {
+  padding: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.concept-one .text-concept {
+  margin: 10%;
+}
+.concept-one .text-concept h2 {
+  margin-bottom: 35px;
+}
+.concept-one .text-concept .bloc-text-concept {
+  font-family: "monserrat_regular";
+  font-size: 0.9rem;
+}
+.concept-one .text-concept .bloc-text-concept p {
+  margin: 0;
+}
+
+.concept-two {
+  padding: 0;
+}
+.concept-two .img-concept {
+  width: 90%;
+  margin: 20px 15px 20px;
+}
+.concept-two .img-concept img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
