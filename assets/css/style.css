@@ -23,7 +23,7 @@ h2 {
 
 #Missions {
   background: #ef533c;
-  height: 70vh;
+  height: 450px;
   position: relative;
 }
 #Missions h2 {
@@ -33,7 +33,7 @@ h2 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 4%;
+  bottom: 5%;
   padding: 7px 35px;
   border-radius: 10px;
   border: 2px solid black;
@@ -54,7 +54,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 55vh;
+  height: 350px;
   font-family: "monserrat_bold";
 }
 @media (max-width: 970px) {
@@ -90,13 +90,15 @@ h2 {
 .cards_mission_container_carousel {
   width: 70%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 15px 0;
+  margin-bottom: 10px;
   display: none;
 }
 .cards_mission_container_carousel .carousel-item {
   width: 100%;
-  height: 320px;
+  height: 250px;
   overflow: hidden;
+  margin: 10px 0;
 }
 .cards_mission_container_carousel .carousel-item img {
   object-fit: cover;

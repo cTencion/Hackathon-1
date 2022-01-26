@@ -1,6 +1,6 @@
 #Missions {
   background: $primary-color;
-  height: 70vh;
+  height: 450px;
   position: relative;
 
   h2 {
@@ -11,7 +11,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 4%;
+    bottom: 5%;
     @include btnMix(white, $primary-color, black, black);
     a {
       text-decoration: none;
@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 55vh;
+  height: 350px;
   font-family: "monserrat_bold";
   @media (max-width: 970px) {
     display: none;
@@ -58,13 +58,16 @@
 .cards_mission_container_carousel {
   width: 70%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 15px 0;
+  margin-bottom: 10px;
   display: none;
 
   .carousel-item {
     width: 100%;
-    height: 320px;
+    height: 250px;
     overflow: hidden;
+    margin: 10px 0;
+
     img {
       object-fit: cover;
       object-position: top;
