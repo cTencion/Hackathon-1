@@ -1,5 +1,5 @@
 header {
-  overflow: hidden;
+  font-family: "oswald_regular";
   .header-box {
     align-items: center;
     display: flex;
@@ -7,7 +7,7 @@ header {
     // background: rgba(0, 0, 0, 0);
 
     .header-logo {
-      width: 20%;
+      width: 15%;
       margin: 2vh 0;
       min-width: 130px;
 
@@ -32,7 +32,7 @@ header {
             color: black;
 
             &:hover{
-              color: $primary-color;
+              font-family: "oswald_bold";
               transition : all 0.3s;
             }
           }
