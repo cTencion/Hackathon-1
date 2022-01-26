@@ -48,7 +48,7 @@ h2 {
 
 header {
   font-family: "oswald_regular";
-  font-size: 2rem;
+  font-size: 1.3rem;
   position: absolute;
   width: 100vw;
   z-index: 3;
@@ -58,7 +58,8 @@ header .header-box {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
 }
 header .header-box .header-logo {
   width: 15%;
@@ -80,15 +81,18 @@ header .header-box nav ul {
   list-style-type: none;
 }
 header .header-box nav ul li {
-  width: 150px;
+  width: 100px;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .header-box nav ul li a {
   text-decoration: none;
   color: white;
 }
 header .header-box nav ul li a:hover {
-  font-size: 2.1rem;
+  font-size: 1.5rem;
   transition: all 0.2s;
 }
 header #burger-btn {
@@ -200,6 +204,9 @@ header #hidden ul li a:hover {
   top: 50%;
   transform: translateY(-50%);
 }
+#home-banner .bloc-banner h1 > .display-block {
+  margin-top: 10px;
+}
 #home-banner .bloc-banner p:nth-child(2) {
   text-transform: uppercase;
   font-family: "monserrat_regular";
@@ -210,6 +217,7 @@ header #hidden ul li a:hover {
   font-size: 1rem;
 }
 #home-banner .bloc-banner a {
+  position: absolute;
   padding: 13px 45px;
   border-radius: 10px;
   border: 2px solid #ef533c;
@@ -219,6 +227,7 @@ header #hidden ul li a:hover {
   font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
+  top: 110%;
 }
 #home-banner .bloc-banner a:hover {
   background: #ef533c;

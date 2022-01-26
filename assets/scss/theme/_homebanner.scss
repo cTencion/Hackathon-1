@@ -12,6 +12,10 @@
         top: 50%;
         transform: translateY(-50%);
 
+        h1 > .display-block{
+            margin-top: 10px;
+        }
+
         p:nth-child(2){
             text-transform: uppercase;
             font-family: "monserrat_regular";
@@ -24,7 +28,9 @@
         }
 
         a {
-            @include btnMix(white, none, $primary-color, $primary-color)
+            position: absolute;
+            @include btnMix(white, none, $primary-color, $primary-color);
+            top : 110%;
         }
     }
 }
