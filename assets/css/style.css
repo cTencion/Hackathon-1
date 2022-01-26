@@ -19,6 +19,7 @@ h2 {
   font-family: "oswald_bold";
   color: white;
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 #Missions {
@@ -34,13 +35,15 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
   bottom: 5%;
-  padding: 7px 35px;
+  padding: 13px 45px;
   border-radius: 10px;
   border: 2px solid black;
   background: #ef533c;
   color: white;
   font-family: "monserrat_bold";
-  font-size: 0.7rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 #Missions .reserver:hover {
   background: black;

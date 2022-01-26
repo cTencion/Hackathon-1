@@ -8,13 +8,15 @@ $secondary-color: #4b5c75;
 // Mixin bouton
 
 @mixin btnMix($color, $bg, $border, $hover) {
-  padding: 7px 35px;
+  padding: 13px 45px;
   border-radius: 10px;
   border: 2px solid $border;
   background: $bg;
   color: $color;
   font-family: "monserrat_bold";
-  font-size: 0.7rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
   &:hover {
     background: $hover;
   }
