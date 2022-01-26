@@ -1,0 +1,42 @@
+#presentation-mission{
+    .box-presentation{
+        display: flex;
+        flex-wrap: no-wrap;
+
+        &:nth-child(even){
+            flex-direction: row-reverse;
+        }
+    }
+    .presentation-img-chateau{
+        width: 50%;
+        margin: 0;
+        background: center/cover url(../img/chateau2.jpg);
+    }.presentation-img-chucky{
+        width: 50%;
+        margin: 0;
+        background: center/cover url(../img/chucky2.jpeg);
+    }.presentation-img-souterrain{
+        width: 50%;
+        margin: 0;
+        background: center/cover url(../img/souterrain2.jpg);
+    }
+
+    .presentation-text{
+        background-color: $primary-color;
+        width: 50%;
+        margin: 0;
+        padding : 60px 100px 60px 100px;
+
+        h2{
+            margin-bottom: 60px;
+        }
+        p{
+            color: white;
+            font-family: "monserrat_regular";
+            margin: 0;
+            span{
+                font-family: "monserrat_bold";
+            }
+        }
+    }
+}

@@ -19,9 +19,7 @@
   src: url(../font/Oswald-SemiBold.ttf);
 }
 .filter-svg-burger {
-  filter: brightness(0%) saturate(0%) contrast(1000%);
-  -webkit-filter: brightness(0%) saturate(0%) contrast(1000%);
-  -moz-filter: brightness(0%) saturate(0%) contrast(1000%);
+  filter: brightness(0) invert(1);
 }
 
 body {
@@ -370,6 +368,46 @@ header #hidden ul li a:hover {
 }
 #mission-banner .mission-titre-box .new-mission-text a:hover {
   background: #ef533c;
+}
+
+#presentation-mission .box-presentation {
+  display: flex;
+  flex-wrap: no-wrap;
+}
+#presentation-mission .box-presentation:nth-child(even) {
+  flex-direction: row-reverse;
+}
+#presentation-mission .presentation-img-chateau {
+  width: 50%;
+  margin: 0;
+  background: center/cover url(../img/chateau2.jpg);
+}
+#presentation-mission .presentation-img-chucky {
+  width: 50%;
+  margin: 0;
+  background: center/cover url(../img/chucky2.jpeg);
+}
+#presentation-mission .presentation-img-souterrain {
+  width: 50%;
+  margin: 0;
+  background: center/cover url(../img/souterrain2.jpg);
+}
+#presentation-mission .presentation-text {
+  background-color: #ef533c;
+  width: 50%;
+  margin: 0;
+  padding: 60px 100px 60px 100px;
+}
+#presentation-mission .presentation-text h2 {
+  margin-bottom: 60px;
+}
+#presentation-mission .presentation-text p {
+  color: white;
+  font-family: "monserrat_regular";
+  margin: 0;
+}
+#presentation-mission .presentation-text p span {
+  font-family: "monserrat_bold";
 }
 
 /*# sourceMappingURL=style.css.map */
