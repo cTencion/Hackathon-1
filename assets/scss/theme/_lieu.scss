@@ -1,0 +1,47 @@
+#lieu {
+    background-color: black;
+    .lieu {
+        text-align: center;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .text-lieu {
+        h2 {
+            padding: 0 0 40px;
+        }
+
+        p {
+            margin: 0;
+            font-family: "monserrat_regular";
+            font-size: 0.9;
+        }
+    }
+
+    a {
+        @include btnMix(white, none, $primary-color, $primary-color);
+        margin : 40px !important;
+    }
+
+
+    .img-lieu{
+        display: flex;
+
+        .img-box-lieu{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+            &:first-of-type{
+                margin-right : 4px;
+            }
+
+            &:last-of-type{
+                margin-left: 4px;
+            }
+
+            
+        }
+    }
+}
