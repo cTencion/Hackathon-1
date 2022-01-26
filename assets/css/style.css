@@ -227,6 +227,8 @@ header #hidden ul li a:hover {
   font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
   top: 110%;
 }
 #home-banner .bloc-banner a:hover {
@@ -265,6 +267,55 @@ header #hidden ul li a:hover {
 .concept-two .img-concept img {
   width: 100%;
   object-fit: cover;
+}
+
+#lieu {
+  background-color: black;
+}
+#lieu .lieu {
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+#lieu .text-lieu h2 {
+  padding: 0 0 40px;
+}
+#lieu .text-lieu p {
+  margin: 0;
+  font-family: "monserrat_regular";
+  font-size: 0.9;
+}
+#lieu a {
+  padding: 13px 45px;
+  border-radius: 10px;
+  border: 2px solid #ef533c;
+  background: none;
+  color: white;
+  font-family: "monserrat_bold";
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  margin: 40px !important;
+}
+#lieu a:hover {
+  background: #ef533c;
+}
+#lieu .img-lieu {
+  display: flex;
+}
+#lieu .img-lieu .img-box-lieu img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+#lieu .img-lieu .img-box-lieu:first-of-type {
+  margin-right: 4px;
+}
+#lieu .img-lieu .img-box-lieu:last-of-type {
+  margin-left: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */
