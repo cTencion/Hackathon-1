@@ -8,19 +8,23 @@
         color: white;
         width: 50%;
         position: absolute;
-        left: 10%;
+        left: 5%;
         top: 50%;
         transform: translateY(-50%);
 
         p:nth-child(2){
             text-transform: uppercase;
             font-family: "monserrat_regular";
-            font-size: 1.8rem;
+            font-size: 1.4rem;
         }
 
         p:nth-child(3){
             font-family: "monserrat_bold";
-            font-size: 1.3rem;
+            font-size: 1rem;
+        }
+
+        a {
+            @include btnMix(white, none, $primary-color, $primary-color)
         }
     }
 }

@@ -31,7 +31,7 @@ body {
 h1 {
   text-transform: uppercase;
   font-family: "oswald_bold";
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h2 {
@@ -39,6 +39,7 @@ h2 {
   font-family: "oswald_bold";
   color: white;
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .display-block {
@@ -195,18 +196,32 @@ header #hidden ul li a:hover {
   color: white;
   width: 50%;
   position: absolute;
-  left: 10%;
+  left: 5%;
   top: 50%;
   transform: translateY(-50%);
 }
 #home-banner .bloc-banner p:nth-child(2) {
   text-transform: uppercase;
   font-family: "monserrat_regular";
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 #home-banner .bloc-banner p:nth-child(3) {
   font-family: "monserrat_bold";
-  font-size: 1.3rem;
+  font-size: 1rem;
+}
+#home-banner .bloc-banner a {
+  padding: 13px 45px;
+  border-radius: 10px;
+  border: 2px solid #ef533c;
+  background: none;
+  color: white;
+  font-family: "monserrat_bold";
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#home-banner .bloc-banner a:hover {
+  background: #ef533c;
 }
 
 /*# sourceMappingURL=style.css.map */
