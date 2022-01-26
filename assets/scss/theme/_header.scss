@@ -1,8 +1,10 @@
 header {
+  overflow: hidden;
   .header-box {
     align-items: center;
     display: flex;
     justify-content: space-around;
+    // background: rgba(0, 0, 0, 0);
 
     .header-logo {
       width: 20%;
@@ -109,10 +111,16 @@ header {
     height: 100%;
     width: 40%;
     position: absolute;
-    left: -1500px;
+    left: -300px;
     top: 0;
     transition: 0.5s ease-out;
     z-index: 2000000000000;
+    display: none;
+
+    @media only screen and (max-width: 375px) {
+      display: block;
+    }
+
 
     &.isActive {
       left: 0;

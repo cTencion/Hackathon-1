@@ -20,6 +20,9 @@
   -moz-filter: brightness(0%) saturate(0%) contrast(1000%);
 }
 
+header {
+  overflow: hidden;
+}
 header .header-box {
   align-items: center;
   display: flex;
@@ -113,10 +116,16 @@ header #hidden {
   height: 100%;
   width: 40%;
   position: absolute;
-  left: -1500px;
+  left: -300px;
   top: 0;
   transition: 0.5s ease-out;
   z-index: 2000000000000;
+  display: none;
+}
+@media only screen and (max-width: 375px) {
+  header #hidden {
+    display: block;
+  }
 }
 header #hidden.isActive {
   left: 0;
