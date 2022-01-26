@@ -2,58 +2,104 @@
   font-family: "monserrat_regular";
   src: url(../font/Montserrat-Regular.ttf);
 }
-
 @font-face {
   font-family: "monserrat_bold";
   src: url(../font/Montserrat-bold.ttf);
 }
-
 @font-face {
   font-family: "oswald_regular";
   src: url(../font/Oswald-Regular.ttf);
 }
-
 @font-face {
   font-family: "oswald_bold";
   src: url(../font/Oswald-Bold.ttf);
+}
+h2 {
+  text-align: center;
+  font-family: "oswald_bold";
+  color: white;
+}
+
+#Missions {
+  background: #ef533c;
+  height: 400px;
+  position: relative;
+}
+#Missions h2 {
+  text-align: center;
+  font-family: "oswald_bold";
+  color: white;
+  font-size: 1.5rem;
+}
+#Missions button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  padding: 7px 35px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: #ef533c;
+  color: white;
+  font-family: "monserrat_bold";
+  font-size: 0.7rem;
+}
+#Missions button:hover {
+  background: black;
 }
 
 .cards_mission_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
-  background: #ef533c;
-  padding: 2%;
+  height: 55vh;
   font-family: "monserrat_bold";
 }
-
 @media (max-width: 970px) {
   .cards_mission_container {
     display: none;
   }
 }
-
 .cards_mission_container .card {
-  height: 220px;
-  min-width: 220px;
+  height: 250px;
+  width: 250px;
   margin: 0 10px;
   text-align: center;
   text-transform: uppercase;
   color: white;
   justify-content: end;
+  position: relative;
 }
-
+.cards_mission_container .card img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
 .cards_mission_container .card h3 {
   font-size: 0.9rem;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .cards_mission_container_carousel {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   display: none;
 }
-
+.cards_mission_container_carousel .carousel-item {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+.cards_mission_container_carousel .carousel-item img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+}
 @media (max-width: 970px) {
   .cards_mission_container_carousel {
     display: block;
@@ -63,19 +109,16 @@
 .temoignage {
   text-align: center;
 }
-
 .temoignage .container_cards {
   padding: 10%;
   gap: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
 .temoignage .container_cards .card_temoignage {
   border: 1px solid;
   border-radius: 5px;
 }
-
 .temoignage .container_cards .card_temoignage .img_container {
   border-radius: 500px;
   height: 160px;
@@ -83,12 +126,10 @@
   overflow: hidden;
   margin: 0 auto;
 }
-
 .temoignage .container_cards .card_temoignage .img_container img {
   width: 100%;
   object-fit: cover;
 }
-
 .temoignage .container_cards .card_temoignage p {
   padding: 10px 10px;
   text-align: left;
@@ -104,32 +145,26 @@ footer {
   background: black;
   color: white;
 }
-
 footer .social ul {
   padding-top: 2%;
   display: flex;
   justify-content: space-evenly;
 }
-
 footer .social li {
   list-style: none;
   font-size: 2.5rem;
   cursor: pointer;
 }
-
 footer .social li a {
   color: #ef533c;
 }
-
 footer .social li:hover {
   transform: scale(1.5);
   transition: 0.3s;
 }
-
 footer .social h6 {
   padding-top: 5%;
 }
-
 footer p {
   text-align: center;
   padding-top: 10%;
