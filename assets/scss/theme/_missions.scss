@@ -1,14 +1,22 @@
 #Missions {
   background: $primary-color;
-  height: 400px;
+  height: 440px;
   position: relative;
 
-  button {
+  h2 {
+    padding-top: 40px;
+  }
+
+  .reserver {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 5%;
+    bottom: 4%;
     @include btnMix(white, $primary-color, black, black);
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 }
 .cards_mission_container {
@@ -43,12 +51,14 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
+      padding-top: 20px;
     }
   }
 }
 .cards_mission_container_carousel {
   width: 70%;
   margin: 0 auto;
+  padding: 20px 0;
   display: none;
 
   .carousel-item {

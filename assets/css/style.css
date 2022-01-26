@@ -23,14 +23,17 @@ h2 {
 
 #Missions {
   background: #ef533c;
-  height: 400px;
+  height: 440px;
   position: relative;
 }
-#Missions button {
+#Missions h2 {
+  padding-top: 40px;
+}
+#Missions .reserver {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 5%;
+  bottom: 4%;
   padding: 7px 35px;
   border-radius: 10px;
   border: 2px solid black;
@@ -39,8 +42,12 @@ h2 {
   font-family: "monserrat_bold";
   font-size: 0.7rem;
 }
-#Missions button:hover {
+#Missions .reserver:hover {
   background: black;
+}
+#Missions .reserver a {
+  text-decoration: none;
+  color: white;
 }
 
 .cards_mission_container {
@@ -77,11 +84,13 @@ h2 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  padding-top: 20px;
 }
 
 .cards_mission_container_carousel {
   width: 70%;
   margin: 0 auto;
+  padding: 20px 0;
   display: none;
 }
 .cards_mission_container_carousel .carousel-item {
