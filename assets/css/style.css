@@ -924,18 +924,35 @@ footer .mentionslegales {
   padding-top: 160px;
   color: white;
   background: black;
-  height: 80vh;
+}
+.reservation h2 {
+  padding-bottom: 30px;
+  font-size: 2rem;
+}
+.reservation p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
 }
 .reservation div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border: 2px solid white;
-  border-radius: 15px;
-  width: 30%;
+  border-radius: 30px;
+  width: 50%;
   min-width: 215px;
-  padding: 5px;
+  padding: 15px 10px;
   margin: 10px;
+}
+.reservation div:last-of-type {
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 810px) {
+  .reservation div {
+    width: 80%;
+    margin: 20px;
+    padding: 20px 10px;
+  }
 }
 .reservation div i {
   color: #ef533c;
@@ -943,6 +960,7 @@ footer .mentionslegales {
 }
 .reservation div p {
   margin: 0;
+  font-size: 1.2rem;
 }
 .reservation div .textResa {
   padding-left: 10px;
@@ -964,8 +982,10 @@ footer .mentionslegales {
   max-width: 400px;
   margin: 30px auto;
 }
-.reserveCards .cardReservation .img-container {
-  height: 400px;
+@media (max-width: 810px) {
+  .reserveCards .cardReservation .img-container {
+    margin-bottom: 65px;
+  }
 }
 .reserveCards .cardReservation .img-container h6,
 .reserveCards .cardReservation .img-container p {
