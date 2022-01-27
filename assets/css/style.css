@@ -1194,6 +1194,21 @@ footer .mentionslegales {
   display: none;
   opacity: 1;
 }
+@media screen and (max-width: 900px) {
+  #qfrequentes h1 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+  }
+  #qfrequentes h2 {
+    font-size: 2rem;
+  }
+  #qfrequentes .question-big-box .question-box {
+    width: 100%;
+  }
+  #qfrequentes .question-big-box .question-box .reponse {
+    width: 100%;
+  }
+}
 
 #qreservations {
   background-color: #ef533c;
@@ -1244,6 +1259,21 @@ footer .mentionslegales {
   width: 80%;
   display: none;
   opacity: 1;
+}
+@media screen and (max-width: 900px) {
+  #qreservations h1 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+  }
+  #qreservations h2 {
+    font-size: 2rem;
+  }
+  #qreservations .question-big-box .question-box {
+    width: 100%;
+  }
+  #qreservations .question-big-box .question-box .reponse {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
