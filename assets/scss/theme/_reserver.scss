@@ -1,2 +1,28 @@
 .reservation {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 160px;
+  color: white;
+  background: black;
+  height: 80vh;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 30%;
+    padding: 5px;
+    margin: 10px;
+    i {
+      color: $primary-color;
+    }
+    p {
+      margin: 0;
+    }
+  }
 }

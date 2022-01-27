@@ -622,4 +622,32 @@ footer .mentionslegales {
   margin-bottom: 20px 0;
 }
 
+.reservation {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 160px;
+  color: white;
+  background: black;
+  height: 80vh;
+}
+.reservation div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 30%;
+  padding: 5px;
+  margin: 10px;
+}
+.reservation div i {
+  color: #ef533c;
+}
+.reservation div p {
+  margin: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
