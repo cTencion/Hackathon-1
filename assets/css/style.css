@@ -193,18 +193,17 @@ header #hidden ul li a:hover {
 #Missions {
   background: #ef533c;
   height: 470px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #Missions h2 {
   padding: 20px;
   text-align: center;
 }
 #Missions .reserver {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 2%;
-  padding: 8px 45px;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
   border: 2px solid black;
   background: #ef533c;
@@ -213,7 +212,8 @@ header #hidden ul li a:hover {
   font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 #Missions .reserver:hover {
   background: black;
@@ -226,15 +226,14 @@ header #hidden ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 350px;
   font-family: "monserrat_bold";
 }
-@media (max-width: 970px) {
+@media (max-width: 1100px) {
   #Missions .cards_mission_container {
     display: none;
   }
 }
-#Missions .cards_mission_container .card {
+#Missions .cards_mission_container #card {
   height: 250px;
   width: 250px;
   margin: 0 10px;
@@ -244,14 +243,10 @@ header #hidden ul li a:hover {
   border: none;
   color: white;
   justify-content: end;
-}
-#Missions .cards_mission_container .card img {
-  width: 100%;
-  height: 100%;
   overflow: hidden;
-  object-fit: cover;
+  position: relative;
 }
-#Missions .cards_mission_container .card h3 {
+#Missions .cards_mission_container #card h3 {
   font-size: 0.9rem;
   width: 100%;
   position: absolute;
@@ -261,26 +256,31 @@ header #hidden ul li a:hover {
   padding: 10px;
   backdrop-filter: blur(3px);
 }
-#Missions .cards_mission_container_carousel {
-  width: 70%;
-  margin: 0 auto;
-  padding: 15px 0;
-  display: none;
-}
-#Missions .cards_mission_container_carousel .carousel-item {
+#Missions .cards_mission_container #card a {
+  height: 100%;
   width: 100%;
-  height: 250px;
-  overflow: hidden;
-  margin: 10px 0;
 }
-#Missions .cards_mission_container_carousel .carousel-item img {
-  object-fit: cover;
-  object-position: top;
+#Missions .cards_mission_container #card a img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
 }
-@media (max-width: 970px) {
-  #Missions .cards_mission_container_carousel {
+#Missions .cards_mission_container #card a img:hover {
+  transform: scale(1.5) translate(10%, 15%);
+  transition: 3s;
+}
+#Missions .carousel-inner {
+  height: 320px;
+  display: none;
+}
+#Missions .carousel-inner .carousel-inner img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1100px) {
+  #Missions .carousel-inner {
     display: block;
   }
 }
@@ -620,10 +620,6 @@ footer .horaire .jour {
 }
 footer .mentionslegales {
   margin-bottom: 20px 0;
-}
-
-.reservation {
-  margin-top: 400px;
 }
 
 /*# sourceMappingURL=style.css.map */
