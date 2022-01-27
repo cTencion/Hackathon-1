@@ -353,9 +353,60 @@ header #hidden ul li a:hover {
   font-size: 0.8rem;
   font-family: "monserrat_regular";
 }
+@media (max-width: 780px) {
+  .temoignage .container_cards {
+    display: none;
+  }
+}
+.temoignage #slider {
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+}
+.temoignage #slider figure {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: 30s slidy infinite;
+}
+.temoignage #slider figure img {
+  width: 20%;
+  height: auto;
+  float: left;
+}
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
 
 footer {
-  height: 280px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -386,6 +437,12 @@ footer .main-footer h6 {
   padding-bottom: 5px;
   font-family: "oswald_bold";
 }
+@media (max-width: 600px) {
+  footer .main-footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 footer .social {
   justify-content: center;
   align-items: center;
@@ -411,12 +468,14 @@ footer .social li:hover {
 }
 footer .social h6 {
   padding-top: 10%;
+  padding-bottom: 20px;
   margin: 0;
 }
 footer p {
   text-align: center;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   margin: 0;
+  line-height: 2;
 }
 footer .horaire .jour {
   font-weight: bolder;
@@ -564,7 +623,6 @@ footer .mentionslegales {
 }
 
 footer {
-  height: 280px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -595,6 +653,12 @@ footer .main-footer h6 {
   padding-bottom: 5px;
   font-family: "oswald_bold";
 }
+@media (max-width: 600px) {
+  footer .main-footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 footer .social {
   justify-content: center;
   align-items: center;
@@ -620,12 +684,14 @@ footer .social li:hover {
 }
 footer .social h6 {
   padding-top: 10%;
+  padding-bottom: 20px;
   margin: 0;
 }
 footer p {
   text-align: center;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   margin: 0;
+  line-height: 2;
 }
 footer .horaire .jour {
   font-weight: bolder;
@@ -758,6 +824,7 @@ footer .mentionslegales {
 .reservation div i {
   color: #ef533c;
   padding: 0 5px;
+  cursor: pointer;
 }
 .reservation div p {
   margin: 0;
@@ -797,7 +864,7 @@ footer .mentionslegales {
 .reserveCards .cardReservation .img-container img {
   width: 100%;
   height: 100%;
-  object-fit: top/cover;
+  object-fit: center/cover;
   overflow: hidden;
 }
 .reserveCards .cardReservation .hourResa {
@@ -825,6 +892,23 @@ footer .mentionslegales {
   font-family: "monserrat_regular";
 }
 .reserveCards .cardReservation .hourResa .hour .time {
+  font-family: "monserrat_bold";
+}
+.reserveCards .cardReservation .hourResa .hour-black {
+  background: #4b5c75;
+  border-radius: 15px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+.reserveCards .cardReservation .hourResa .hour-black p {
+  margin: 0;
+  font-size: 0.7rem;
+  font-family: "monserrat_regular";
+}
+.reserveCards .cardReservation .hourResa .hour-black .time {
   font-family: "monserrat_bold";
 }
 .reserveCards .cardReservation .hourResa .conseil {
