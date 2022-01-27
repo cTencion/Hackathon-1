@@ -19,9 +19,7 @@
   src: url(../font/Oswald-SemiBold.ttf);
 }
 .filter-svg-burger {
-  filter: brightness(0%) saturate(0%) contrast(1000%);
-  -webkit-filter: brightness(0%) saturate(0%) contrast(1000%);
-  -moz-filter: brightness(0%) saturate(0%) contrast(1000%);
+  filter: brightness(0) invert(1);
 }
 
 body {
@@ -32,6 +30,7 @@ h1 {
   text-transform: uppercase;
   font-family: "oswald_bold";
   font-size: 2rem;
+  color: white;
 }
 
 h2 {
@@ -49,12 +48,12 @@ header {
   font-family: "oswald_regular";
   font-size: 1.3rem;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   z-index: 3;
 }
 header .header-box {
   padding: 0;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   display: flex;
   justify-content: space-around;
@@ -468,6 +467,10 @@ footer .mentionslegales {
   background: #ef533c;
 }
 
+#concept {
+  overflow: hidden;
+}
+
 .concept-one {
   padding: 0;
   background-color: black;
@@ -622,6 +625,99 @@ footer .mentionslegales {
   margin-bottom: 20px 0;
 }
 
+#mission-banner {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mission-banner .mission-titre-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25vh;
+  justify-content: center;
+}
+#mission-banner .mission-titre-box h1 {
+  margin-bottom: 60px;
+}
+#mission-banner .mission-titre-box .new-mission-text {
+  background: center/cover no-repeat url(../img/divergente2.jpg);
+  width: 100%;
+  height: 600px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+#mission-banner .mission-titre-box .new-mission-text p {
+  font-family: "monserrat_regular";
+  margin: 0;
+  width: 48%;
+  text-align: center;
+}
+#mission-banner .mission-titre-box .new-mission-text p span {
+  font-family: "monserrat_bold";
+}
+#mission-banner .mission-titre-box .new-mission-text a {
+  padding: 13px 45px;
+  border-radius: 10px;
+  border: 2px solid #ef533c;
+  background: none;
+  color: white;
+  font-family: "monserrat_bold";
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  margin: 30px 0 60px;
+}
+#mission-banner .mission-titre-box .new-mission-text a:hover {
+  background: #ef533c;
+}
+
+#presentation-mission .box-presentation {
+  display: flex;
+  flex-wrap: no-wrap;
+}
+#presentation-mission .box-presentation:nth-child(even) {
+  flex-direction: row-reverse;
+}
+#presentation-mission .presentation-img-chateau {
+  width: 50%;
+  margin: 0;
+  background: center/cover url(../img/chateau2.jpg);
+}
+#presentation-mission .presentation-img-chucky {
+  width: 50%;
+  margin: 0;
+  background: center/cover url(../img/chucky2.jpeg);
+}
+#presentation-mission .presentation-img-souterrain {
+  width: 50%;
+  margin: 0;
+  background: center/cover url(../img/souterrain2.jpg);
+}
+#presentation-mission .presentation-text {
+  background-color: #ef533c;
+  width: 50%;
+  margin: 0;
+  padding: 60px 100px 60px 100px;
+}
+#presentation-mission .presentation-text h2 {
+  margin-bottom: 60px;
+}
+#presentation-mission .presentation-text p {
+  color: white;
+  font-family: "monserrat_regular";
+  margin: 0;
+}
+#presentation-mission .presentation-text p span {
+  font-family: "monserrat_bold";
+}
+
 .reservation {
   text-align: center;
   justify-content: center;
@@ -648,6 +744,47 @@ footer .mentionslegales {
 }
 .reservation div p {
   margin: 0;
+}
+
+#contact {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact h1 {
+  margin-top: 25vh;
+  margin-bottom: 60px;
+}
+#contact .contact-big-box {
+  display: flex;
+}
+#contact .contact-big-box .contact-box {
+  height: 100%;
+}
+#contact .contact-big-box .contact-box .minibox h2 {
+  margin-bottom: 30px;
+}
+#contact .contact-big-box .contact-box .minibox p {
+  font-family: "monserrat_regular";
+  color: white;
+  margin: 0;
+}
+#contact .contact-big-box .contact-box .minibox p span {
+  font-family: "monserrat_bold";
+}
+#contact .contact-big-box .contact-box .minibox p i {
+  font-size: 2rem;
+}
+#contact .contact-big-box .contact-box .minibox .margbot {
+  margin-bottom: 15px;
+}
+#contact .contact-big-box .contact-box .localisation {
+  width: 70%;
+}
+#contact .contact-big-box .contact-box .localisation img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
