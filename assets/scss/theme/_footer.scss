@@ -71,4 +71,8 @@ footer {
   .mentionslegales {
     margin-bottom: 20px 0;
   }
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
