@@ -69,7 +69,7 @@ header .header-box .header-logo img {
   object-fit: cover;
   width: 100%;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
   header .header-box nav {
     display: none;
   }
@@ -102,7 +102,7 @@ header .header-box nav ul li a:hover {
 header #burger-btn {
   display: none;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
   header #burger-btn {
     display: flex;
     cursor: pointer;
@@ -167,7 +167,7 @@ header #hidden {
   z-index: 2000000000000;
   display: none;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
   header #hidden {
     display: block;
   }
@@ -812,7 +812,7 @@ footer .mentionslegales {
 #mission-banner .mission-titre-box .new-mission-text a:hover {
   background: #ef533c;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 900px) {
   #mission-banner .mission-titre-box {
     width: 80%;
   }
@@ -870,6 +870,49 @@ footer .mentionslegales {
 }
 #presentation-mission .presentation-text p span {
   font-family: "monserrat_bold";
+}
+@media screen and (max-width: 900px) {
+  #presentation-mission .box-presentation {
+    flex-direction: column-reverse;
+  }
+  #presentation-mission .box-presentation:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  #presentation-mission .box-presentation .presentation-text {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  #presentation-mission .box-presentation .presentation-text h2 {
+    margin-top: 20%;
+    font-size: 2rem;
+  }
+  #presentation-mission .box-presentation .presentation-text p {
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0 4%;
+  }
+  #presentation-mission .box-presentation .presentation-text p:last-of-type {
+    margin-bottom: 20%;
+  }
+  #presentation-mission .box-presentation .presentation-img-chateau {
+    width: 100vw;
+    height: 40vh;
+    margin: 0%;
+    background: center/cover url(../img/chateau2.jpg);
+  }
+  #presentation-mission .box-presentation .presentation-img-chucky {
+    width: 100vw;
+    height: 40vh;
+    margin: 0;
+    background: center/cover url(../img/chucky2.jpeg);
+  }
+  #presentation-mission .box-presentation .presentation-img-souterrain {
+    width: 100vw;
+    height: 40vh;
+    margin: 0;
+    background: center/cover url(../img/souterrain2.jpg);
+  }
 }
 
 .reservation {

@@ -1,41 +1,91 @@
-#presentation-mission{
-    .box-presentation{
+#presentation-mission {
+    .box-presentation {
         display: flex;
         flex-wrap: no-wrap;
 
-        &:nth-child(even){
+        &:nth-child(even) {
             flex-direction: row-reverse;
         }
     }
-    .presentation-img-chateau{
+    .presentation-img-chateau {
         width: 50%;
         margin: 0;
         background: center/cover url(../img/chateau2.jpg);
-    }.presentation-img-chucky{
+    }
+    .presentation-img-chucky {
         width: 50%;
         margin: 0;
         background: center/cover url(../img/chucky2.jpeg);
-    }.presentation-img-souterrain{
+    }
+    .presentation-img-souterrain {
         width: 50%;
         margin: 0;
         background: center/cover url(../img/souterrain2.jpg);
     }
 
-    .presentation-text{
+    .presentation-text {
         background-color: $primary-color;
         width: 50%;
         margin: 0;
-        padding : 60px 100px 60px 100px;
+        padding: 60px 100px 60px 100px;
 
-        h2{
+        h2 {
             margin-bottom: 60px;
         }
-        p{
+        p {
             color: white;
             font-family: "monserrat_regular";
             margin: 0;
-            span{
+            span {
                 font-family: "monserrat_bold";
+            }
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .box-presentation {
+            flex-direction: column-reverse;
+
+            &:nth-child(even) {
+                flex-direction: column-reverse;
+            }
+
+            .presentation-text {
+                width: 100%;
+                text-align: center;
+                padding: 0;
+
+                h2{
+                    margin-top:20%;
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                    width: 100%;
+                    padding :0 4%;
+                    &:last-of-type{
+                       margin-bottom: 20%; 
+                    }
+                    
+                }
+            }
+
+            .presentation-img-chateau {
+                width: 100vw;
+                height: 40vh;
+                margin: 0%;
+                background: center/cover url(../img/chateau2.jpg);
+            }
+            .presentation-img-chucky {
+                width: 100vw;
+                height: 40vh;
+                margin: 0;
+                background: center/cover url(../img/chucky2.jpeg);
+            }
+            .presentation-img-souterrain {
+                width: 100vw;
+                height: 40vh;
+                margin: 0;
+                background: center/cover url(../img/souterrain2.jpg);
             }
         }
     }
