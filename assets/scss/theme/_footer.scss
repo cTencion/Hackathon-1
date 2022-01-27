@@ -1,5 +1,8 @@
 footer {
+<<<<<<< HEAD
   // height: 280px;
+=======
+>>>>>>> cyril
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -29,6 +32,10 @@ footer {
       padding-bottom: 5px;
       font-family: "oswald_bold";
     }
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   .social {
     justify-content: center;
@@ -55,13 +62,15 @@ footer {
     }
     h6 {
       padding-top: 10%;
+      padding-bottom: 20px;
       margin: 0;
     }
   }
   p {
     text-align: center;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     margin: 0;
+    line-height: 2;
   }
   .horaire {
     .jour {
