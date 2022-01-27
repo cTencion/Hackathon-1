@@ -537,14 +537,48 @@ footer .mentionslegales {
   padding: 0;
 }
 .concept-two .img-concept {
-  width: 90%;
-  margin: 20px 15px 20px;
+  width: 80%;
+  margin: 5% 2%;
 }
 .concept-two .img-concept img {
   width: 100%;
   object-fit: cover;
 }
+.concept-two .img-concept .schema-mobile {
+  display: none;
+}
 
+@media screen and (max-width: 375px) {
+  .contain-concept {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contain-concept div {
+    width: 100%;
+  }
+  .contain-concept .concept-one {
+    text-align: center;
+  }
+  .contain-concept .concept-one .text-concept h2 {
+    font-size: 2rem;
+  }
+  .contain-concept .concept-one .text-concept .bloc-text-concept {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .contain-concept .concept-two .img-concept {
+    width: 80%;
+    margin: auto;
+    padding: 5% 0;
+  }
+  .contain-concept .concept-two .schema-desktop {
+    display: none;
+  }
+  .contain-concept .concept-two .schema-mobile {
+    display: block;
+  }
+}
 #lieu {
   background-color: black;
 }
