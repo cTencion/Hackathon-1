@@ -1,44 +1,67 @@
-#mission-banner{
+#mission-banner {
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .mission-titre-box{
+    .mission-titre-box {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 25vh;
         justify-content: center;
 
-        h1{
+        h1 {
             margin-bottom: 60px;
         }
 
-        .new-mission-text{
+        .new-mission-text {
             background: center/cover no-repeat url(../img/divergente2.jpg);
             width: 100%;
             height: 600px;
             color: white;
-            display : flex;
+            display: flex;
             flex-direction: column;
             justify-content: end;
             align-items: center;
-            p{
+            p {
                 font-family: "monserrat_regular";
                 margin: 0;
                 width: 48%;
                 text-align: center;
 
-                span{
+                span {
                     font-family: "monserrat_bold";
                 }
             }
 
-            a{
+            a {
                 @include btnMix(white, none, $primary-color, $primary-color);
                 margin: 30px 0 60px;
-            };
+            }
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        .mission-titre-box {
+            width: 80%;
+            h2 {
+                text-align: center;
+            }
+
+            .new-mission-text{
+                background: top/contain no-repeat url(../img/divergente2.jpg);
+                
+                p{
+                    display: inline-block;
+                    width :100%;
+                    font-size: 1.2rem;
+
+                    span{
+                        margin-top: 20%;
+                    }
+                }
+            }
         }
     }
 }

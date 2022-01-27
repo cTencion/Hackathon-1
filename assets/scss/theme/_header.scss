@@ -29,6 +29,10 @@ header {
       @media only screen and (max-width: 375px) {
         display: none;
       }
+      @media only screen and (max-width: 900px){
+        width : 70%;
+
+      }
       ul {
         display: flex;
         justify-content: space-between;

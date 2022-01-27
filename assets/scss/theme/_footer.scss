@@ -1,5 +1,5 @@
 footer {
-  height: 280px;
+  // height: 280px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@ footer {
   .mentionslegales {
     margin-bottom: 20px 0;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
   }
