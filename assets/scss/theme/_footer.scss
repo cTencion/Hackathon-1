@@ -13,6 +13,7 @@ footer {
     padding-top: 10px;
     background: $secondary-color;
     border: none;
+    transition: all 0.3s;
     &:hover {
       transform: scale(0.8);
     }

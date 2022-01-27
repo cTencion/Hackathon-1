@@ -12,13 +12,15 @@
 
     .contact-big-box {
         display: flex;
+        margin-bottom: 70px;
 
         .contact-box {
-            height: 100%;
+            width: 50%;
 
-            .minibox {
+            .mini-box {
                 h2 {
                     margin-bottom: 30px;
+                    margin-top: 60px;
                 }
 
                 p {
@@ -30,8 +32,18 @@
                         font-family: "monserrat_bold";
                     }
 
-                    i {
-                        font-size: 2rem;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        i {
+                            font-size: 2rem;
+                            
+                            margin: 0 5px;
+                            &:hover {
+                                transform: scale(1.2);
+                                transition: 0.3s;
+                            }
+                        }
                     }
                 }
                 .margbot {
@@ -40,7 +52,8 @@
             }
 
             .localisation {
-                width: 70%;
+                width: 110%;
+                margin-top: 40px;
 
                 img {
                     width: 100%;
