@@ -14,34 +14,63 @@
         p {
             margin: 0;
             font-family: "monserrat_regular";
-            font-size: 0.9;
+            font-size: 0.9rem;
         }
     }
 
     a {
         @include btnMix(white, none, $primary-color, $primary-color);
-        margin : 40px !important;
+        margin: 40px !important;
     }
 
-
-    .img-lieu{
+    .img-lieu {
         display: flex;
 
-        .img-box-lieu{
-            img{
+        .img-box-lieu {
+            img {
                 width: 100%;
                 height: 100%;
                 object-fit: fill;
             }
-            &:first-of-type{
-                margin-right : 4px;
+            &:first-of-type {
+                margin-right: 4px;
             }
 
-            &:last-of-type{
+            &:last-of-type {
                 margin-left: 4px;
             }
+        }
+    }
 
-            
+    @media screen and (max-width: 375px) {
+        .lieu {
+            padding-left: 0;
+            padding-right: 0;
+            .text-lieu {
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .img-lieu {
+                flex-direction: column;
+                width: 100%;
+
+                .img-box-lieu {
+                    width: 100%;
+                    img {
+                        margin: 0;
+                        width: 100%;
+                    }
+                    &:first-of-type {
+                        margin-right: 0px;
+                    }
+
+                    &:last-of-type {
+                        margin-left: 0px;
+                    }
+                }
+            }
         }
     }
 }
