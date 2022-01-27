@@ -16,13 +16,114 @@
     border: 2px solid white;
     border-radius: 15px;
     width: 30%;
+    min-width: 215px;
     padding: 5px;
     margin: 10px;
     i {
       color: $primary-color;
+      padding: 0 5px;
     }
     p {
       margin: 0;
     }
+    .textResa {
+      padding-left: 10px;
+      font-style: italic;
+    }
+  }
+}
+.reserveCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+  padding: 10%;
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+
+  .cardReservation {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 30px auto;
+
+    .img-container {
+      height: 400px;
+      h6,
+      p {
+        margin: -35px;
+        color: white;
+        text-align: center;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: top/cover;
+      overflow: hidden;
+    }
+    .hourResa {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 40px 40px 1fr;
+      gap: 5%;
+      padding: 5%;
+      padding-bottom: 10%;
+      border: 2px solid;
+      grid-template-areas:
+        "time time time"
+        "time time time"
+        " p p p";
+      .hour {
+        border-radius: 15px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        background: $primary-color;
+        color: white;
+        p {
+          margin: 0;
+          font-size: 0.7rem;
+          font-family: "monserrat_regular";
+        }
+        .time {
+          font-family: "monserrat_bold";
+        }
+      }
+      .conseil {
+        grid-area: p;
+        text-align: center;
+        font-size: 0.7rem;
+        padding-bottom: 20px;
+      }
+      @media (max-width: 810px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 40px 40px 40px 1fr;
+        grid-template-areas:
+          "time time"
+          "time time"
+          "time time"
+          "p p";
+      }
+    }
+  }
+  button {
+    @include btnMix(black, none, $primary-color, $primary-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    &:hover {
+      color: white;
+    }
+  }
+  @media (max-width: 810px) {
+    display: flex;
+    flex-direction: column;
   }
 }

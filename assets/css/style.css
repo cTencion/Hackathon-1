@@ -191,51 +191,53 @@ header #hidden ul li a:hover {
 
 #Missions {
   background: #ef533c;
-  height: 470px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #Missions h2 {
+  margin: 15px 0;
   padding: 20px;
   text-align: center;
 }
 #Missions .reserver {
-  align-items: center;
-  justify-content: center;
+  padding: 11px 45px;
   border-radius: 10px;
   border: 2px solid black;
   background: #ef533c;
   color: white;
-  font-family: "monserrat_bold";
+  font-family: "oswald_bold";
   font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  transition: all 0.3s;
+  display: inline-block;
+  margin-top: 35px;
 }
 #Missions .reserver:hover {
   background: black;
 }
-#Missions .reserver a {
+#Missions a {
   text-decoration: none;
   color: white;
 }
-#Missions .cards_mission_container {
+
+.cards_mission_container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   font-family: "monserrat_bold";
 }
 @media (max-width: 1100px) {
-  #Missions .cards_mission_container {
+  .cards_mission_container {
     display: none;
   }
 }
-#Missions .cards_mission_container #card {
-  height: 250px;
-  width: 250px;
-  margin: 0 10px;
+.cards_mission_container #card {
+  height: 260px;
+  width: 260px;
+  margin: 0 5px;
   text-align: center;
   text-transform: uppercase;
   background: #ef533c;
@@ -245,7 +247,7 @@ header #hidden ul li a:hover {
   overflow: hidden;
   position: relative;
 }
-#Missions .cards_mission_container #card h3 {
+.cards_mission_container #card h3 {
   font-size: 0.9rem;
   width: 100%;
   position: absolute;
@@ -255,31 +257,32 @@ header #hidden ul li a:hover {
   padding: 10px;
   backdrop-filter: blur(3px);
 }
-#Missions .cards_mission_container #card a {
+.cards_mission_container #card a {
   height: 100%;
   width: 100%;
 }
-#Missions .cards_mission_container #card a img {
+.cards_mission_container #card a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 0.5s ease;
 }
-#Missions .cards_mission_container #card a img:hover {
+.cards_mission_container #card a img:hover {
   transform: scale(1.5) translate(10%, 15%);
   transition: 3s;
 }
-#Missions .carousel-inner {
-  height: 320px;
+
+.carousel-inner {
+  height: 260px;
   display: none;
 }
-#Missions .carousel-inner .carousel-inner img {
+.carousel-inner .carousel-inner img {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
 @media (max-width: 1100px) {
-  #Missions .carousel-inner {
+  .carousel-inner {
     display: block;
   }
 }
@@ -421,6 +424,12 @@ footer .horaire .jour {
 footer .mentionslegales {
   margin-bottom: 20px 0;
 }
+@media (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 #home-banner {
   position: relative;
@@ -450,12 +459,12 @@ footer .mentionslegales {
 }
 #home-banner .bloc-banner a {
   position: absolute;
-  padding: 13px 45px;
+  padding: 11px 45px;
   border-radius: 10px;
   border: 2px solid #ef533c;
   background: none;
   color: white;
-  font-family: "monserrat_bold";
+  font-family: "oswald_bold";
   font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -523,12 +532,12 @@ footer .mentionslegales {
   font-size: 0.9;
 }
 #lieu a {
-  padding: 13px 45px;
+  padding: 11px 45px;
   border-radius: 10px;
   border: 2px solid #ef533c;
   background: none;
   color: white;
-  font-family: "monserrat_bold";
+  font-family: "oswald_bold";
   font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -624,6 +633,12 @@ footer .horaire .jour {
 footer .mentionslegales {
   margin-bottom: 20px 0;
 }
+@media (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 #mission-banner {
   background-color: black;
@@ -661,12 +676,12 @@ footer .mentionslegales {
   font-family: "monserrat_bold";
 }
 #mission-banner .mission-titre-box .new-mission-text a {
-  padding: 13px 45px;
+  padding: 11px 45px;
   border-radius: 10px;
   border: 2px solid #ef533c;
   background: none;
   color: white;
-  font-family: "monserrat_bold";
+  font-family: "oswald_bold";
   font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -736,14 +751,124 @@ footer .mentionslegales {
   border: 2px solid white;
   border-radius: 15px;
   width: 30%;
+  min-width: 215px;
   padding: 5px;
   margin: 10px;
 }
 .reservation div i {
   color: #ef533c;
+  padding: 0 5px;
 }
 .reservation div p {
   margin: 0;
+}
+.reservation div .textResa {
+  padding-left: 10px;
+  font-style: italic;
+}
+
+.reserveCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+  padding: 10%;
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+}
+.reserveCards .cardReservation {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 30px auto;
+}
+.reserveCards .cardReservation .img-container {
+  height: 400px;
+}
+.reserveCards .cardReservation .img-container h6,
+.reserveCards .cardReservation .img-container p {
+  margin: -35px;
+  color: white;
+  text-align: center;
+}
+.reserveCards .cardReservation .img-container p {
+  font-size: 0.8rem;
+}
+.reserveCards .cardReservation .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: top/cover;
+  overflow: hidden;
+}
+.reserveCards .cardReservation .hourResa {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px 40px 1fr;
+  gap: 5%;
+  padding: 5%;
+  padding-bottom: 10%;
+  border: 2px solid;
+  grid-template-areas: "time time time" "time time time" " p p p";
+}
+.reserveCards .cardReservation .hourResa .hour {
+  border-radius: 15px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background: #ef533c;
+  color: white;
+}
+.reserveCards .cardReservation .hourResa .hour p {
+  margin: 0;
+  font-size: 0.7rem;
+  font-family: "monserrat_regular";
+}
+.reserveCards .cardReservation .hourResa .hour .time {
+  font-family: "monserrat_bold";
+}
+.reserveCards .cardReservation .hourResa .conseil {
+  grid-area: p;
+  text-align: center;
+  font-size: 0.7rem;
+  padding-bottom: 20px;
+}
+@media (max-width: 810px) {
+  .reserveCards .cardReservation .hourResa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 40px 40px 1fr;
+    grid-template-areas: "time time" "time time" "time time" "p p";
+  }
+}
+.reserveCards button {
+  padding: 11px 45px;
+  border-radius: 10px;
+  border: 2px solid #ef533c;
+  background: none;
+  color: black;
+  font-family: "oswald_bold";
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.reserveCards button:hover {
+  background: #ef533c;
+}
+.reserveCards button:hover {
+  color: white;
+}
+@media (max-width: 810px) {
+  .reserveCards {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 #contact {

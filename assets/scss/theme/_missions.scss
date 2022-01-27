@@ -1,97 +1,85 @@
 #Missions {
   background: $primary-color;
-  height: 470px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h2 {
+    margin: 15px 0;
     padding: 20px;
     text-align: center;
   }
 
   .reserver {
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    border: 2px solid black;
-    background: $primary-color;
-    color: white;
-    font-family: "monserrat_bold";
-    font-size: 1.1rem;
-    text-transform: uppercase;
+    @include btnMix(white, $primary-color, black, black);
+    margin-top: 35px;
+  }
+  a {
     text-decoration: none;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    &:hover {
-      background: black;
-    }
-    a {
-      text-decoration: none;
-      color: white;
-    }
+    color: white;
+  }
+}
+
+.cards_mission_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "monserrat_bold";
+  @media (max-width: 1100px) {
+    display: none;
   }
 
-  .cards_mission_container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    font-family: "monserrat_bold";
-    @media (max-width: 1100px) {
-      display: none;
+  #card {
+    height: 260px;
+    width: 260px;
+    margin: 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+    background: $primary-color;
+    border: none;
+    color: white;
+    justify-content: end;
+    overflow: hidden;
+    position: relative;
+
+    h3 {
+      font-size: 0.9rem;
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -8px;
+      padding: 10px;
+      backdrop-filter: blur(3px);
     }
-
-    #card {
-      height: 250px;
-      width: 250px;
-      margin: 0 10px;
-      text-align: center;
-      text-transform: uppercase;
-      background: $primary-color;
-      border: none;
-      color: white;
-      justify-content: end;
-      overflow: hidden;
-      position: relative;
-
-      h3 {
-        font-size: 0.9rem;
+    a {
+      height: 100%;
+      width: 100%;
+      img {
         width: 100%;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -8px;
-        padding: 10px;
-        backdrop-filter: blur(3px);
-      }
-      a {
         height: 100%;
-        width: 100%;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: 0.5s ease;
-          &:hover {
-            transform: scale(1.5) translate(10%, 15%);
-            transition: 3s;
-          }
+        object-fit: cover;
+        transition: 0.5s ease;
+        &:hover {
+          transform: scale(1.5) translate(10%, 15%);
+          transition: 3s;
         }
       }
     }
   }
+}
+.carousel-inner {
+  height: 260px;
+  display: none;
   .carousel-inner {
-    height: 320px;
-    display: none;
-    .carousel-inner {
-      img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-      }
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
     }
-    @media (max-width: 1100px) {
-      display: block;
-    }
+  }
+  @media (max-width: 1100px) {
+    display: block;
   }
 }
