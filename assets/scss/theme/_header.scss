@@ -122,9 +122,10 @@ header {
   //---------MENU NAV RESPONSIVE --------------
   //---------MENU NAV RESPONSIVE --------------
   #hidden {
-    background-color: $secondary-color;
-    height: 100%;
-    width: 40%;
+    background-color: black;
+    height: 100vh;
+    width: 60%;
+    padding: 12vh 0;
     position: absolute;
     left: -300px;
     top: 0;
@@ -143,16 +144,18 @@ header {
     ul {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: left;
       list-style-type: none;
       margin: 2vh 0 0 0;
-      padding: 0;
+      padding: 0 15%;
 
       li {
         margin: 5%;
         a {
           text-decoration: none;
           color: white;
+          font-size: 2rem;
+          text-transform: uppercase;
           transition: all 0.3s;
 
           &:hover {

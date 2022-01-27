@@ -151,9 +151,10 @@ header .active path:nth-child(6) {
   transform: translateX(9px) translateY(1px) rotate(45deg);
 }
 header #hidden {
-  background-color: #4b5c75;
-  height: 100%;
-  width: 40%;
+  background-color: black;
+  height: 100vh;
+  width: 60%;
+  padding: 12vh 0;
   position: absolute;
   left: -300px;
   top: 0;
@@ -172,10 +173,10 @@ header #hidden.isActive {
 header #hidden ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   list-style-type: none;
   margin: 2vh 0 0 0;
-  padding: 0;
+  padding: 0 15%;
 }
 header #hidden ul li {
   margin: 5%;
@@ -183,6 +184,8 @@ header #hidden ul li {
 header #hidden ul li a {
   text-decoration: none;
   color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
   transition: all 0.3s;
 }
 header #hidden ul li a:hover {
@@ -296,6 +299,11 @@ header #hidden ul li a:hover {
   gap: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 375px) {
+  .temoignage .container_cards {
+    display: none;
+  }
 }
 .temoignage .container_cards .card_temoignage {
   border: 2px solid;
@@ -451,12 +459,12 @@ footer .mentionslegales {
 }
 #home-banner .bloc-banner a {
   position: absolute;
-  padding: 13px 45px;
+  padding: 11px 45px;
   border-radius: 10px;
   border: 2px solid #ef533c;
   background: none;
   color: white;
-  font-family: "monserrat_bold";
+  font-family: "oswald_bold";
   font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -466,6 +474,28 @@ footer .mentionslegales {
 }
 #home-banner .bloc-banner a:hover {
   background: #ef533c;
+}
+@media only screen and (max-width: 375px) {
+  #home-banner .bloc-banner {
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #home-banner .bloc-banner h1 {
+    line-height: 50px;
+  }
+  #home-banner .bloc-banner h1 .display-block {
+    margin-top: 0;
+  }
+  #home-banner .bloc-banner p:nth-child(3) {
+    font-family: "monserrat_bold";
+    font-size: 1.3rem;
+  }
+  #home-banner .bloc-banner a {
+    transform: translate(-50%, -50%);
+  }
 }
 
 #concept {
@@ -524,12 +554,12 @@ footer .mentionslegales {
   font-size: 0.9;
 }
 #lieu a {
-  padding: 13px 45px;
+  padding: 11px 45px;
   border-radius: 10px;
   border: 2px solid #ef533c;
   background: none;
   color: white;
-  font-family: "monserrat_bold";
+  font-family: "oswald_bold";
   font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -663,12 +693,12 @@ footer .mentionslegales {
   font-family: "monserrat_bold";
 }
 #mission-banner .mission-titre-box .new-mission-text a {
-  padding: 13px 45px;
+  padding: 11px 45px;
   border-radius: 10px;
   border: 2px solid #ef533c;
   background: none;
   color: white;
-  font-family: "monserrat_bold";
+  font-family: "oswald_bold";
   font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -822,10 +852,14 @@ footer .mentionslegales {
   color: #ef533c;
   font-size: 1.7rem;
 }
+#qfrequentes .question-big-box .question-box.showned .reponse {
+  display: block;
+}
 #qfrequentes .question-big-box .question-box .reponse {
   padding: 20px 15px;
   width: 80%;
   display: none;
+  opacity: 1;
 }
 
 #qreservations {
@@ -869,13 +903,14 @@ footer .mentionslegales {
   color: black;
   font-size: 1.7rem;
 }
+#qreservations .question-big-box .question-box.showned .reponse {
+  display: block;
+}
 #qreservations .question-big-box .question-box .reponse {
   padding: 20px 15px;
   width: 80%;
   display: none;
-}
-#qreservations .question-big-box .question-box .reponse.showned {
-  display: block;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
