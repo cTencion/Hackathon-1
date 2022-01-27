@@ -1,4 +1,4 @@
-#concept{
+#concept {
     overflow: hidden;
 }
 
@@ -10,20 +10,19 @@
     justify-content: center;
     align-items: center;
 
-    .text-concept{
-        margin : 10%;
+    .text-concept {
+        margin: 10%;
 
-        h2{
+        h2 {
             margin-bottom: 35px;
         }
 
-        .bloc-text-concept{
+        .bloc-text-concept {
             font-family: "monserrat_regular";
             font-size: 0.9rem;
             p {
                 margin: 0;
             }
-            
         }
     }
 }
@@ -31,12 +30,58 @@
 .concept-two {
     padding: 0;
     .img-concept {
-        width: 90%;
-        margin: 20px 15px 20px;
+        width: 80%;
+        margin: 5% 2%;
+        // padding : 5% 0;
 
-        img{
-            width:100%;
+        img {
+            width: 100%;
             object-fit: cover;
+        }
+        .schema-mobile {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .contain-concept {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            width: 100%;
+        }
+
+        .concept-one {
+            text-align: center;
+            .text-concept {
+                h2 {
+                    font-size: 2rem;
+                }
+
+                .bloc-text-concept {
+                    width: 100%;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .concept-two {
+            .img-concept{
+                width: 80%;
+                margin: auto;
+                padding: 5% 0;
+
+            }
+            .schema-desktop {
+                display: none;
+            }
+
+            .schema-mobile {
+                display: block;
+            }
         }
     }
 }

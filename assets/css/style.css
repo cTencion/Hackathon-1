@@ -151,9 +151,10 @@ header .active path:nth-child(6) {
   transform: translateX(9px) translateY(1px) rotate(45deg);
 }
 header #hidden {
-  background-color: #4b5c75;
-  height: 100%;
-  width: 40%;
+  background-color: black;
+  height: 100vh;
+  width: 60%;
+  padding: 12vh 0;
   position: absolute;
   left: -300px;
   top: 0;
@@ -172,10 +173,10 @@ header #hidden.isActive {
 header #hidden ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   list-style-type: none;
   margin: 2vh 0 0 0;
-  padding: 0;
+  padding: 0 15%;
 }
 header #hidden ul li {
   margin: 5%;
@@ -183,6 +184,8 @@ header #hidden ul li {
 header #hidden ul li a {
   text-decoration: none;
   color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
   transition: all 0.3s;
 }
 header #hidden ul li a:hover {
@@ -299,6 +302,11 @@ header #hidden ul li a:hover {
   gap: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 375px) {
+  .temoignage .container_cards {
+    display: none;
+  }
 }
 .temoignage .container_cards .card_temoignage {
   border: 2px solid;
@@ -476,6 +484,28 @@ footer .mentionslegales {
 #home-banner .bloc-banner a:hover {
   background: #ef533c;
 }
+@media only screen and (max-width: 375px) {
+  #home-banner .bloc-banner {
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #home-banner .bloc-banner h1 {
+    line-height: 50px;
+  }
+  #home-banner .bloc-banner h1 .display-block {
+    margin-top: 0;
+  }
+  #home-banner .bloc-banner p:nth-child(3) {
+    font-family: "monserrat_bold";
+    font-size: 1.3rem;
+  }
+  #home-banner .bloc-banner a {
+    transform: translate(-50%, -50%);
+  }
+}
 
 #concept {
   overflow: hidden;
@@ -507,14 +537,48 @@ footer .mentionslegales {
   padding: 0;
 }
 .concept-two .img-concept {
-  width: 90%;
-  margin: 20px 15px 20px;
+  width: 80%;
+  margin: 5% 2%;
 }
 .concept-two .img-concept img {
   width: 100%;
   object-fit: cover;
 }
+.concept-two .img-concept .schema-mobile {
+  display: none;
+}
 
+@media screen and (max-width: 375px) {
+  .contain-concept {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contain-concept div {
+    width: 100%;
+  }
+  .contain-concept .concept-one {
+    text-align: center;
+  }
+  .contain-concept .concept-one .text-concept h2 {
+    font-size: 2rem;
+  }
+  .contain-concept .concept-one .text-concept .bloc-text-concept {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .contain-concept .concept-two .img-concept {
+    width: 80%;
+    margin: auto;
+    padding: 5% 0;
+  }
+  .contain-concept .concept-two .schema-desktop {
+    display: none;
+  }
+  .contain-concept .concept-two .schema-mobile {
+    display: block;
+  }
+}
 #lieu {
   background-color: black;
 }
@@ -924,6 +988,112 @@ footer .mentionslegales {
 }
 #contact .contact-big-box .contact-box .localisation img {
   width: 100%;
+}
+
+#qfrequentes {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#qfrequentes h1 {
+  margin-top: 25vh;
+  margin-bottom: 60px;
+}
+#qfrequentes h2 {
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+#qfrequentes .question-big-box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 60px;
+}
+#qfrequentes .question-big-box .question-box {
+  border: 3px solid white;
+  border-radius: 30px;
+  width: 60%;
+  margin: 30px;
+}
+#qfrequentes .question-big-box .question-box .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 15px;
+}
+#qfrequentes .question-big-box .question-box .question p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+#qfrequentes .question-big-box .question-box .question i {
+  color: #ef533c;
+  font-size: 1.7rem;
+}
+#qfrequentes .question-big-box .question-box.showned .reponse {
+  display: block;
+}
+#qfrequentes .question-big-box .question-box .reponse {
+  padding: 20px 15px;
+  width: 80%;
+  display: none;
+  opacity: 1;
+}
+
+#qreservations {
+  background-color: #ef533c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#qreservations h2 {
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+#qreservations .question-big-box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 60px;
+}
+#qreservations .question-big-box .question-box {
+  border: 3px solid white;
+  border-radius: 30px;
+  width: 60%;
+  margin: 30px;
+}
+#qreservations .question-big-box .question-box .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 15px;
+}
+#qreservations .question-big-box .question-box .question p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+#qreservations .question-big-box .question-box .question i {
+  color: black;
+  font-size: 1.7rem;
+}
+#qreservations .question-big-box .question-box.showned .reponse {
+  display: block;
+}
+#qreservations .question-big-box .question-box .reponse {
+  padding: 20px 15px;
+  width: 80%;
+  display: none;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
