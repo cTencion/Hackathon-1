@@ -11,6 +11,10 @@
     gap: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
     .card_temoignage {
       border: 2px solid;
       border-radius: 40px;

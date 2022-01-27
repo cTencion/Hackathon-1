@@ -22,14 +22,215 @@
 </head>
 
 <body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container-fluid header-box">
+
+            <div class="header-logo">
+                <a href="index.html"><img src="assets/img/logo blanc.png" alt="Logo Blanc Together Inside"></a>
+            </div>
+
+            <nav class="col-4">
+                <ul>
+                    <li><a href="missions.html">Missions</a></li>
+                    <li><a href="reserver.html">Réserver</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQS</a></li>
+                </ul>
+            </nav>
+
+            <div id="burger-btn" onclick="this.classList.toggle('active')">
+                <svg class="filter-svg-burger" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                    viewBox="0 0 200 200">
+                    <g stroke-width="6.5" stroke-linecap="round">
+                        <path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                        <path
+                            d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+                            fill="none" stroke="#fff" />
+                        <path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                        <path
+                            d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+                            fill="none" stroke="#fff" />
+                        <path d="M100.75 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                        <path d="M100.75 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+                    </g>
+                </svg>
+            </div>
+
+        </div>
+
+        <div id="hidden">
+            <ul>
+                <li><a href="missions.html">Mission</a></li>
+                <li><a href="reserver.html">Réserver</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQS</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- HEADER -->
+
+    <section id="qfrequentes">
+        <h1>faqs</h1>
+
+        <h2>Questions fréquentes</h2>
+
+        <div class="question-big-box">
+
+            <div class="question-box" id="repsecurite">
+                <div class="question">
+                    <p>Est-on vraiment enfermés ?</p>
+                    <i class="faccordeon fa-solid fa-plus" id="securite"></i>
+                </div>
+                <div class="reponse">
+                    <p>Vous n’êtes pas bloqués à l’intérieur de la pièce. Tout d’abord un boîtier d’urgence est à
+                        disposition à côté des entrées. De plus, un Game Master est présent pendant la partie et peut
+                        intervenir en cas de problème.</p>
+                </div>
+            </div>
+
+            <div class="question-box" id="replangage">
+                <div class="question">
+                    <p>En quelles langues les jeux sont-ils disponibles ?</p>
+                    <i class="faccordeon fa-solid fa-plus" id="langage"></i>
+                </div>
+                <div class="reponse">
+                    <p>Voici la liste de nos scenarios disponibles en Anglais :</p>
+                    <ul>
+                        <li>Le Château Ambulant</li>
+                        <li>Chucky</li>
+                        <li>Les souterrains de Bordeaux</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-box" id="repaccessibilite">
+                <div class="question">
+                    <p>Est-ce faisable pour tous ?</p>
+                    <i class="faccordeon fa-solid fa-plus" id="accessibilite"></i>
+                </div>
+                <div class="reponse">
+                    <p>Notre jeu a été conçu pour le plus grand nombre et ne comporte pas d’aspect physique ni
+                        effrayant, vous serez donc capable de réaliser toutes les tâches du jeu proposées sans crainte
+                        ni risques.</p>
+
+                    <p>Certaines de nos salles peuvent accueillir des personnes en fauteuil roulant. N’hésitez pas à
+                        nous contacter directement pour confirmer votre venue et aviser du scénario le plus adapté.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="qreservations">
+
+        <h2>questions réservations</h2>
+
+        <div class="question-big-box">
+
+            <div class="question-box" id="repmodifier">
+                <div class="question">
+                    <p>Puis-je modifier ma réservation ?</p>
+                    <i class="faccordeon fa-solid fa-plus" id="modifier"></i>
+                </div>
+                <div class="reponse">
+                    <p>Vous pouvez modifier votre réservation jusqu’à 5 jours minimum à l’avance : nous pourrons déplacer votre réservation ou rajouter des joueurs supplémentaires (ceux-ci pourront payer sur place directement, dans la limite des places disponibles).</p>
+                    <p>Les détectives manquants à l’appel ou les groupes ne se présentant pas ne pourront pas être remboursés.</p>
+                </div>
+            </div>
+
+            <div class="question-box" id="repcheques">
+                <div class="question">
+                    <p>Peut-on régler en chèques vacances ?</p>
+                    <i class="faccordeon fa-solid fa-plus" id="cheques"></i>
+                </div>
+                <div class="reponse">
+                    <p>C’est tout à fait possible. Dans la mesure où toute réservation nécessite un paiement au préalable, il faut impérativement se déplacer dans nos locaux pour effectuer la réservation sur place, avant la date de la session.</p>
+                    
+                </div>
+            </div>
+
+            <div class="question-box" id="reppersonnes">
+                <div class="question">
+                    <p>12 personnes maximums dans une salles... 13 c'est possible ?</p>
+                    <i class="faccordeon fa-solid fa-plus" id="personnes"></i>
+                </div>
+                <div class="reponse">
+                    <p>Pour des questions de sécurité et de confort de jeu nous sommes tenus de respecter cette règle. Dans ce cas, réservez deux salles identiques et affrontez-vous !</p>
+                </div>
+
+            </div>
+
+        </div>
 
 
 
 
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <button class="retour"> <a href="#header">
+
+                <img src="./assets/img/doublechevrons.svg" alt="doublechevrons">
+            </a>
+        </button>
+        <div class="main-footer">
+
+            <div class="horaire">
+                <h6>HORAIRES D'OUVERTURE</h6>
+                <p class="jour">Mardi au Samedi</p>
+                <p>13h00-00h00</p>
+                <p class="jour">Dimanche</p>
+                <p>13h00-23h00</p>
+                <p class="jour">Lundi</p>
+                <p>Fermé</p>
+            </div>
+
+            <div class="social">
+                <h6>CONTACTEZ-NOUS</h6>
+                <p>05 45 77 17 11</p>
+                <p>contact.togheterinside@gmail.com</p>
+                <p>www.togheterinside.com</p>
+                <ul>
+                    <li><a href="https://twitch.com">
+                            <i class="fab fa-twitch"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://instagram.com">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://campusdulac.com">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mentionslegales">
+            <p>TOGHETER INSIDE © 2022-Tous droits réservés.</p>
+            <p>CGV-CGU</p>
+        </div>
+    </footer>
 
 
 
     <script src="assets/lib/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
