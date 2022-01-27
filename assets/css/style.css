@@ -368,6 +368,7 @@ footer .retour {
   padding-top: 10px;
   background: #4b5c75;
   border: none;
+  transition: all 0.3s;
 }
 footer .retour:hover {
   transform: scale(0.8);
@@ -571,6 +572,7 @@ footer .retour {
   padding-top: 10px;
   background: #4b5c75;
   border: none;
+  transition: all 0.3s;
 }
 footer .retour:hover {
   transform: scale(0.8);
@@ -735,29 +737,41 @@ footer .mentionslegales {
 }
 #contact .contact-big-box {
   display: flex;
+  margin-bottom: 70px;
 }
 #contact .contact-big-box .contact-box {
-  height: 100%;
+  width: 50%;
 }
-#contact .contact-big-box .contact-box .minibox h2 {
+#contact .contact-big-box .contact-box .mini-box h2 {
   margin-bottom: 30px;
+  margin-top: 60px;
 }
-#contact .contact-big-box .contact-box .minibox p {
+#contact .contact-big-box .contact-box .mini-box p {
   font-family: "monserrat_regular";
   color: white;
   margin: 0;
 }
-#contact .contact-big-box .contact-box .minibox p span {
+#contact .contact-big-box .contact-box .mini-box p span {
   font-family: "monserrat_bold";
 }
-#contact .contact-big-box .contact-box .minibox p i {
-  font-size: 2rem;
+#contact .contact-big-box .contact-box .mini-box p a {
+  text-decoration: none;
+  color: white;
 }
-#contact .contact-big-box .contact-box .minibox .margbot {
+#contact .contact-big-box .contact-box .mini-box p a i {
+  font-size: 2rem;
+  margin: 0 5px;
+}
+#contact .contact-big-box .contact-box .mini-box p a i:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+#contact .contact-big-box .contact-box .mini-box .margbot {
   margin-bottom: 15px;
 }
 #contact .contact-big-box .contact-box .localisation {
-  width: 70%;
+  width: 110%;
+  margin-top: 40px;
 }
 #contact .contact-big-box .contact-box .localisation img {
   width: 100%;
