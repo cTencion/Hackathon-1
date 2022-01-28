@@ -209,7 +209,8 @@ header #hidden ul li a:hover {
   padding: 20px;
   text-align: center;
 }
-#Missions .reserver {
+
+.reserver {
   padding: 10px 45px;
   border-radius: 10px;
   border: 2px solid black;
@@ -221,12 +222,12 @@ header #hidden ul li a:hover {
   text-decoration: none;
   transition: all 0.3s;
   display: inline-block;
-  margin-top: 35px;
+  margin: 20px 0;
 }
-#Missions .reserver:hover {
+.reserver:hover {
   background: black;
 }
-#Missions a {
+.reserver a {
   text-decoration: none;
   color: white;
 }
@@ -276,6 +277,52 @@ header #hidden ul li a:hover {
   transition: 0.5s ease;
 }
 .cards_mission_container #card a img:hover {
+  transform: scale(1.5) translate(10%, 15%);
+  transition: 3s;
+}
+.cards_mission_container #slider2 {
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+}
+.cards_mission_container #slider2 img {
+  width: 50px;
+  height: 50px;
+}
+.cards_mission_container #slider2 #card {
+  height: 260px;
+  width: 260px;
+  margin: 0 5px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #ef533c;
+  border: none;
+  color: white;
+  justify-content: end;
+  overflow: hidden;
+  position: relative;
+}
+.cards_mission_container #slider2 #card h3 {
+  font-size: 0.9rem;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  padding: 10px;
+  backdrop-filter: blur(3px);
+}
+.cards_mission_container #slider2 #card a {
+  height: 100%;
+  width: 100%;
+}
+.cards_mission_container #slider2 #card a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+.cards_mission_container #slider2 #card a img:hover {
   transform: scale(1.5) translate(10%, 15%);
   transition: 3s;
 }
@@ -371,51 +418,94 @@ header #hidden ul li a:hover {
     display: none;
   }
 }
-.temoignage #slider {
-  width: 100%;
-  max-width: 1000px;
-  overflow: hidden;
-}
-.temoignage #slider figure {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: left;
-  animation: 30s slidy infinite;
-}
-.temoignage #slider figure img {
-  width: 20%;
-  height: auto;
-  float: left;
-}
-@keyframes slidy {
+
+@keyframes glisse {
   0% {
-    left: 0%;
+    transform: translateX(0);
   }
-  20% {
-    left: 0%;
+  33% {
+    transform: translateX(-500px);
   }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
+  66% {
+    transform: translateX(-950px);
   }
   100% {
-    left: -400%;
+    transform: translateX(0);
+  }
+}
+.slider1 {
+  width: 100%;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.slides1 {
+  width: 1500px;
+  animation: glisse 20s infinite;
+}
+
+.slide1 {
+  float: left;
+  width: 22%;
+  margin: 0 60px;
+  padding-top: 100px;
+}
+.slide1 .card_temoignage {
+  border: 2px solid;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 400px;
+  position: relative;
+}
+.slide1 .card_temoignage .img_container {
+  border-radius: 500px;
+  height: 160px;
+  width: 160px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -80px;
+}
+.slide1 .card_temoignage .img_container img {
+  width: 100%;
+  object-fit: cover;
+}
+.slide1 .card_temoignage h4 {
+  padding-top: 95px;
+  font-family: "monserrat_bold";
+  font-size: 1.2rem;
+}
+.slide1 .card_temoignage p {
+  padding: 10px 10px 70px;
+  text-align: center;
+}
+.slide1 .card_temoignage .star {
+  color: #ef533c;
+  text-align: center;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: -10px 0;
+  width: 100%;
+}
+.slide1 .card_temoignage .name {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: -10px 0;
+  width: 100%;
+  font-size: 0.8rem;
+  font-family: "monserrat_regular";
+}
+@media (min-width: 780px) {
+  .slide1 {
+    display: none;
   }
 }
 
@@ -1108,6 +1198,8 @@ footer .mentionslegales {
   justify-content: center;
   width: 100%;
   color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .reserveCards .cardReservation .hourResa .hour-black p {
   margin: 0;

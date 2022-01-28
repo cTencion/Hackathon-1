@@ -8,11 +8,11 @@
   color: white;
   background: black;
 
-  h2{
+  h2 {
     padding-bottom: 30px;
     font-size: 2rem;
   }
-  p{
+  p {
     margin-bottom: 0;
     font-size: 1.2rem;
   }
@@ -26,10 +26,10 @@
     min-width: 215px;
     padding: 15px 10px;
     margin: 10px;
-      &:last-of-type{
-        margin-bottom: 70px;
-      }
-    @media screen and (max-width:810px) {
+    &:last-of-type {
+      margin-bottom: 70px;
+    }
+    @media screen and (max-width: 810px) {
       width: 80%;
       margin: 20px;
       padding: 20px 10px;
@@ -65,11 +65,11 @@
     margin: 30px auto;
 
     .img-container {
-      @media (max-width: 810px){
+      @media (max-width: 810px) {
         // height: 400px;
-      margin-bottom: 65px;
+        margin-bottom: 65px;
       }
-      
+
       h6,
       p {
         margin: -35px;
@@ -125,6 +125,8 @@
         justify-content: center;
         width: 100%;
         color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
         p {
           margin: 0;
           font-size: 0.7rem;
