@@ -73,51 +73,90 @@
       display: none;
     }
   }
-  #slider {
-    width: 100%;
-    max-width: 1000px;
-    overflow: hidden;
+}
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
   }
-  #slider figure {
+  33% {
+    transform: translateX(-500px);
+  }
+  66% {
+    transform: translateX(-950px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.slider1 {
+  width: 100%;
+  overflow: hidden;
+  margin: 50px auto;
+}
+.slides1 {
+  width: calc(500px * 3);
+  animation: glisse 20s infinite;
+}
+.slide1 {
+  float: left;
+  width: 22%;
+  margin: 0 60px;
+  padding-top: 100px;
+  .card_temoignage {
+    border: 2px solid;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 400px;
     position: relative;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    text-align: left;
-    animation: 30s slidy infinite;
+    .img_container {
+      border-radius: 500px;
+      height: 160px;
+      width: 160px;
+      overflow: hidden;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -80px;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    h4 {
+      padding-top: 95px;
+      font-family: "monserrat_bold";
+      font-size: 1.2rem;
+    }
+    p {
+      padding: 10px 10px 70px;
+      text-align: center;
+    }
+    .star {
+      color: $primary-color;
+      text-align: center;
+      font-size: 1.5rem;
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: -10px 0;
+      width: 100%;
+    }
+    .name {
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: -10px 0;
+      width: 100%;
+      font-size: 0.8rem;
+      font-family: "monserrat_regular";
+    }
   }
-  #slider figure img {
-    width: 20%;
-    height: auto;
-    float: left;
-  }
-  @keyframes slidy {
-    0% {
-      left: 0%;
-    }
-    20% {
-      left: 0%;
-    }
-    25% {
-      left: -100%;
-    }
-    45% {
-      left: -100%;
-    }
-    50% {
-      left: -200%;
-    }
-    70% {
-      left: -200%;
-    }
-    75% {
-      left: -300%;
-    }
-    95% {
-      left: -300%;
-    }
-    100% {
-      left: -400%;
-    }
+  @media (min-width: 780px) {
+    display: none;
   }
 }
