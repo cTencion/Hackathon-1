@@ -210,7 +210,7 @@ header #hidden ul li a:hover {
   text-align: center;
 }
 #Missions .reserver {
-  padding: 11px 45px;
+  padding: 10px 45px;
   border-radius: 10px;
   border: 2px solid black;
   background: #ef533c;
@@ -472,7 +472,7 @@ footer .mentionslegales {
 }
 #home-banner .bloc-banner a {
   position: absolute;
-  padding: 11px 45px;
+  padding: 10px 45px;
   border-radius: 10px;
   border: 2px solid #ef533c;
   background: none;
@@ -626,7 +626,7 @@ footer .mentionslegales {
   font-size: 0.9rem;
 }
 #lieu a {
-  padding: 11px 45px;
+  padding: 10px 45px;
   border-radius: 10px;
   border: 2px solid #ef533c;
   background: none;
@@ -796,7 +796,7 @@ footer .mentionslegales {
   font-family: "monserrat_bold";
 }
 #mission-banner .mission-titre-box .new-mission-text a {
-  padding: 11px 45px;
+  padding: 10px 45px;
   border-radius: 10px;
   border: 2px solid #ef533c;
   background: none;
@@ -1044,7 +1044,7 @@ footer .mentionslegales {
   }
 }
 .reserveCards button {
-  padding: 11px 45px;
+  padding: 10px 45px;
   border-radius: 10px;
   border: 2px solid #ef533c;
   background: none;

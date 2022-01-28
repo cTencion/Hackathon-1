@@ -49,7 +49,6 @@
             }
 
             &.showned {
-                // animation: respAnim 2s forwards;
                 .reponse {
                     display: block;
                 }
@@ -59,14 +58,6 @@
                 width: 80%;
                 display: none;
                 opacity: 1;
-
-                // @keyframes respAnim {
-                //     to {
-                //         opacity: 1;
-                //         height: 100%;
-
-                //     }
-                // }
             }
         }
     }
