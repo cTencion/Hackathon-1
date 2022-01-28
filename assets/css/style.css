@@ -1020,6 +1020,8 @@ footer .mentionslegales {
   width: 100%;
   background: #ef533c;
   color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .reserveCards .cardReservation .hourResa .hour p {
   margin: 0;
