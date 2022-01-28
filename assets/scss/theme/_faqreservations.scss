@@ -65,4 +65,22 @@
             }
         }
     }
+    @media screen and (max-width: 900px) {
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0px;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        .question-big-box {
+            .question-box {
+                width: 100%;
+
+                .reponse {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

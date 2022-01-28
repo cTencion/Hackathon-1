@@ -12,7 +12,7 @@ $secondary-color: #4b5c75;
 
 // Mixin bouton
 @mixin btnMix($color, $bg, $border, $hover) {
-  padding: 11px 45px;
+  padding: 10px 45px;
   border-radius: 10px;
   border: 2px solid $border;
   background: $bg;
